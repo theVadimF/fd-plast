@@ -87,7 +87,7 @@ video {
 :root {
   --White: #FFF;
   --Black: #020002;
-  --Blue-light: #344e9b;
+  --Blue-light: #DDE7F8;
   --Blue: #344e9b;
   --Blue-dark: #003466;
   --Grey: #666F78;
@@ -175,13 +175,14 @@ h5 {
   background: none;
   border: none;
   padding: 0;
-
 }
 
 header .header-wrap {
   max-width: 1675px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 header .display {
@@ -196,7 +197,8 @@ header .top {
 }
 
 header .top .header-wrap {
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: var(--White---text);
 }
 
@@ -265,5 +267,109 @@ header .bottom .list a {
 }
 
 header .bottom .header-wrap {
-  padding: 21px 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.index_top {
+  width: 100%;
+}
+
+.index_top header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.index_top .top_content {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.index_top .top_content .img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-wrap {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.outer-wrap {
+  max-width: 1866px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index_products {
+  margin-top: 148px;
+  margin-bottom: 147px;
+  display: flex;
+  flex-direction: column;
+}
+
+.index_products .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.index_products .top .main_text {
+  max-width: 640px;
+  margin-top: 8px;
+}
+
+.index_products .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 98px 16px;
+}
+
+.index_products .more_btn {
+  color: var(--White---text);
+  background-color: var(--Blue-dark);
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+}
+
+.index_products .products .product {
+  color: var(--Black);
+  text-decoration: none;
+  border-bottom: 3px solid var(--Blue-light, #DDE7F8);
+}
+
+.index_products .products .product .img {
+  height: 450px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.index_products .products .product .bottom {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 28px;
+}
+
+.index_products .products .product .bottom .arrow_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--Blue-dark);
+  border-radius: 100%;
 }
