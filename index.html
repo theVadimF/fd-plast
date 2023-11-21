@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./js/lib/swiper/swiper-bundle.min.css">
 </head>
 <body>
   <div class="index_top">
@@ -233,6 +234,74 @@
         </a>
       </div>
       <a href="" class="more_btn main_text">Перейти в каталог со всеми товарами</a>
+    </div>
+  </div>
+  <div class="outer-wrap request_box">
+    <div class="swiper request_slides ">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="request_initial content-wrap">
+            <div class="left">
+              <h1>Запросить<br>прайс</h1>
+              <button class="show_form main_text">
+                <span>Запросить прайс</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                  <g clip-path="url(#clip0_708_7611)">
+                    <path d="M8.42136 13.7942L13.4006 8.815H1.32495V7.185H13.4006L8.79904 2.5835L9.9362 1.44629L16.49 8L9.55854 14.9314L8.42136 13.7942Z" fill="#344E9B"/>
+                    <path d="M8.42136 13.7942L13.4006 8.815H1.32495V7.185H13.4006L8.79904 2.5835L9.9362 1.44629L16.49 8L9.55854 14.9314L8.42136 13.7942Z" fill="#344E9B"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_708_7611">
+                      <rect width="15.98" height="15.98" fill="white" transform="translate(0.51001 0.00976562)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <img src="./img/placeholder.jpg" alt="" class="img">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="request_form content-wrap">
+            <h3>Запросить индивидуальное<br>предложение</h3>
+            <div class="right">
+              <div class="form_grid">
+                <input type="text" class="input main_text" placeholder="Ваше имя">
+                <input type="text" class="input main_text" placeholder="Телефон">
+                <input type="text" class="input main_text" placeholder="E-mail">
+                <input type="text" class="input main_text" placeholder="Комментарий">
+              </div>
+              <label for="requisites" class="file_lable main_text">Реквизиты (загрузите реквизиты в формате DOC, PDF, Excel)</label>
+              <input type="file" id="requisites" class="file">
+              <label for="requisites" class="file_lable main_text">Заявка (загрузите Вашу заявку в формате DOC, PDF, Excel)</label>
+              <input type="file" class="file">
+              <div class="checkbox_wrap">
+                <input type="checkbox" name="legal1" id="legal1" class="input">
+                <label for="legal1" class="box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_708_8249)">
+                    <path class="check" d="M4 10.5L9.5 15L16.5 6" stroke="white"/>
+                    <rect x="0.5" y="0.5" width="19" height="19" stroke="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_8249">
+                    <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </label>
+                <label for="legal1" class="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</label>
+              </div>
+              <button class="submit main_text">Отправить</button>
+            </div>
+            <button class="form_back transparent_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="./js/lib/swiper/swiper-bundle.min.js"></script>
