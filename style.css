@@ -1,0 +1,172 @@
+html,
+body,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+samp,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+canvas,
+embed,
+figcaption,
+output,
+ruby,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./fonts/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --White: #FFF;
+  --Black: #020002;
+  --Blue-light: #344e9b;
+  --Blue: #344e9b;
+  --Blue-dark: #003466;
+  --Grey: #666F78;
+
+  /* Text */
+  --White---text: #FFF;
+  font-family: Inter, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 59px;
+  line-height: 68px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.main_text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+  }
+  
+  h3 {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+  }
+  
+  h4 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+  }
+  
+  h5 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  
+  .main_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  
+  .text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
