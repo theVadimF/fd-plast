@@ -1,5 +1,5 @@
 $('.request_slides').each(function() {
-  const swiper = new Swiper('.request_slides', {
+  const swiper = new Swiper(this, {
     autoHeight: true,
     noSwiping: true,
     noSwipingClass: 'swiper-slide',
@@ -21,6 +21,12 @@ $('.order_file').change(function(e){
   let fileName = e.target.files[0].name;
   console.log('The file "' + fileName +  '" has been selected.');
   $('.order_lable').text("Заявка: " + fileName);
+});
+
+$('.requisites_file_coop').change(function(e){
+  let fileName = e.target.files[0].name;
+  console.log('The file "' + fileName +  '" has been selected.');
+  $('.requisites_label_coop').text("Реквизиты: " + fileName);
 });
 
 let adv_slider_div = $('.index_advantages .slides');
@@ -64,7 +70,6 @@ const dealers_inner = new Swiper('.dealers_slider', {
       let slide_count = this.slides.length;
       let per_view = this.slidesPerViewDynamic();
       let page_count = Math.ceil(slide_count / per_view);
-      // console.log(page_count)
       for(let i = 1; i <= page_count; ++i) {
         $('.dealers_slider_wrap .pagination .numbers').append(
           `<button class="page_btn main_text transparent_btn" data-pos="${(i-1)*page_count}">${i}</button>`
@@ -75,7 +80,6 @@ const dealers_inner = new Swiper('.dealers_slider', {
     transitionEnd: function() {
       let per_page = this.slidesPerViewDynamic();
       let page = Math.ceil(this.realIndex / this.slidesPerViewDynamic());
-      console.log(page);
       $('.dealers_slider_wrap .pagination .numbers .page_btn').removeClass('__active');
       $(`.dealers_slider_wrap .pagination .numbers .page_btn[data-pos="${(page) * per_page}"]`).addClass('__active');
     }
@@ -89,22 +93,21 @@ $('.dealers_slider_wrap .pagination .numbers .page_btn').click(function() {
   $(this).addClass('__active');
 })
 
-// let slide_count = dealers_inner.slides.count;
-// let per_view = dealers_inner.slidesPerViewDynamic();
-// // let page_count = Math.ceil(slide_count / per_view);
-// let page_count = slide_count / per_view;
-// console.log(slide_count)
-// console.log(per_view)
-// console.log(page_count)
-
-// console.log(dealers_inner.slidesPerViewDynamic());
-// dealers_inner.slideTo(1);
-
-
-
 $('.index_dealers .selector_btn').click(function() {
   $('.index_dealers .selector_btn').removeClass('__active');
   $(this).addClass('__active');
   console.log($(this).data('index'));
   dealers_outer.slideTo($(this).data('index'));
+})
+
+$('.index_news_slider').each(function() {
+  const swiper = new Swiper(this, {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 18,
+    navigation: {
+      nextEl: '.index_press .slider_wrap .nav.next',
+      prevEl: '.index_press .slider_wrap .nav.prev',
+    },
+  });
 })
