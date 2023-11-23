@@ -111,3 +111,14 @@ $('.index_news_slider').each(function() {
     },
   });
 })
+
+$('.docs_block .choose').click(function() {
+  console.log($(this).data('type'));
+  let type = $(this).data('type')
+  $('.docs_block .email_form').data("type", type);
+  $('.docs_block .email_form').fadeIn();
+})
+
+$('.docs_block .email_form .close').click(function() {
+  $(this).parent().fadeOut();
+})
