@@ -55,20 +55,38 @@ $('.index_dealers .more_btn').click(function() {
 })
 
 const dealers_inner = new Swiper('.dealers_slider', {
-  noSwiping: true,
-  noSwipingClass: 'swiper-slide',
-  direction: 'vertical',
-  width: '100%',
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  // noSwiping: true,
+  direction: 'horizontal',
+  // width: 'auto',
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  breakpoints: {
+    800: {
+      direction: 'vertical',
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      // width: 'auto',
+      noSwipingClass: 'swiper-slide',
+      noSwiping: true,
+      navigation: {
+        nextEl: '.dealers_slider_wrap .pagination .next',
+        prevEl: '.dealers_slider_wrap .pagination .back',
+      },
+    }
+  },
   navigation: {
-    nextEl: '.dealers_slider_wrap .pagination .next',
-    prevEl: '.dealers_slider_wrap .pagination .back',
+    nextEl: '.index_dealers .mobile_top .next',
+    prevEl: '.index_dealers .mobile_top .prev',
+  },
+  pagination: {
+    el: '.index_dealers .mobile_top .counter',
+    type: "fraction",
   },
   on: {
     afterInit: function() {
       let slide_count = this.slides.length;
-      let per_view = this.slidesPerViewDynamic();
+      // let per_view = this.slidesPerViewDynamic();
+      let per_view = 3;
       let page_count = Math.ceil(slide_count / per_view);
       for(let i = 1; i <= page_count; ++i) {
         $('.dealers_slider_wrap .pagination .numbers').append(
@@ -78,7 +96,8 @@ const dealers_inner = new Swiper('.dealers_slider', {
       $('.dealers_slider_wrap .pagination .numbers button:first-child').addClass('__active');
     },
     transitionEnd: function() {
-      let per_page = this.slidesPerViewDynamic();
+      // let per_page = this.slidesPerViewDynamic();
+      let per_page = 3;
       let page = Math.ceil(this.realIndex / this.slidesPerViewDynamic());
       $('.dealers_slider_wrap .pagination .numbers .page_btn').removeClass('__active');
       $(`.dealers_slider_wrap .pagination .numbers .page_btn[data-pos="${(page) * per_page}"]`).addClass('__active');
@@ -121,4 +140,41 @@ $('.docs_block .choose').click(function() {
 
 $('.docs_block .email_form .close').click(function() {
   $(this).parent().fadeOut();
+})
+
+$('footer .go_up').click(function() {
+  $('html, body').animate({scrollTop: '0px'}, 500);
+})
+
+const review_slider = new Swiper('.about_contents .reviews .swiper', {
+  pagination: {
+    el: '.about_contents .reviews .swiper-pagination',
+    clickable: true,
+  },
+});
+
+$('.double_slider').each(function() {
+  const info_slider = new Swiper($(this).children('.left_info')[0], {
+    navigation: {
+      nextEl: $(this).find('.next')[0],
+      prevEl: $(this).find('.prev')[0],
+    },
+    pagination: {
+      el: $(this).find('.counter')[0],
+      type: "fraction",
+    },
+  });
+
+  const img_slider = new Swiper($(this).children('.img_slider')[0], {
+    // control: info_slider,
+    effect: 'fade'
+  });
+
+  // img_slider.controller.control = info_slider;
+  info_slider.controller.control = img_slider;
+})
+
+$('.about_faq .section .section_btn').click(function() {
+  
+  $(this).siblings('.content').slideToggle();
 })
