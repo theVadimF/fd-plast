@@ -1363,21 +1363,35 @@ footer .go_up {
   height: auto;
 }
 
+.about_boxes {
+  margin-top: 198px;
+}
+
 .about_boxes .selectors {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(5, 1fr);
 }
 
+.about_boxes .main_swiper > .swiper-wrapper > .swiper-slide {
+  background-color: #FFF;
+}
+
 .about_contents .reviews {
   border-radius: 27px;
   background: var(--Blue, #344E9B);
   color: var(--White---text);
-  padding: 98px 0;
+  padding: 98px 50px;
   box-sizing: border-box;
   min-height: 588px;
   display: flex;
   position: relative;
+  margin-top: 98px;
+}
+
+.about_contents .reviews .swiper-slide {
+  display: flex;
+  height: 100%;
 }
 
 .about_contents .reviews .swiper-pagination {
@@ -1467,6 +1481,10 @@ footer .go_up {
   gap: 160px;
 }
 
+.about_boxes .double_slider {
+  margin-top: 110px;
+}
+
 .double_slider .img_slider {
   width: 100%;
 }
@@ -1497,9 +1515,18 @@ footer .go_up {
   max-width: 386px;
 }
 
+.double_slider .left_info .title {
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+
 .about_faq {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.about_boxes .about_faq {
+  margin-top: 98px;
 }
 
 .about_faq .left {
@@ -1692,6 +1719,11 @@ footer .go_up {
   .request_box .request_initial .show_form {
     margin-top: 50px;
   }
+
+  .about_boxes .selectors {
+    grid-template-columns: repeat(5, 272px);
+    overflow-x: auto;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -1700,8 +1732,9 @@ footer .go_up {
   }
 
   .about_contents .reviews {
-    padding-top: 24px;
+    padding: 24px 5px;
     padding-bottom: 78px;
+    margin-top: 56px;
   }
 
   .about_contents .reviews .swiper-pagination {
@@ -1718,12 +1751,21 @@ footer .go_up {
     gap: 20px;
   }
 
+  .about_boxes .double_slider {
+    margin-top: 20px;
+  }
+
   .double_slider .img_slider .img_wrap {
     justify-content: center;
   }
 
   .double_slider .left_info {
     max-width: 100%;
+  }
+
+  .double_slider .left_info .title {
+    margin-top: 14px;
+    margin-bottom: 12px;
   }
 
   .about_faq {
@@ -1835,6 +1877,11 @@ footer .go_up {
 
   .index_advantages .img {
     height: 215px;
+  }
+
+  .about_boxes .selectors {
+    grid-template-columns: repeat(5, 160px);
+    overflow-x: auto;
   }
 
   .index_dealers .selectors .selector_btn {

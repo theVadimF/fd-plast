@@ -146,6 +146,28 @@ $('footer .go_up').click(function() {
   $('html, body').animate({scrollTop: '0px'}, 500);
 })
 
+const about_boxes = new Swiper('.about_boxes .main_swiper', {
+  effect: 'fade',
+  autoHeight: true,
+  noSwiping: true,
+  noSwipingClass: 'swiper-slide',
+});
+
+$('.about_faq .section .section_btn').click(function() {
+  $(this).siblings('.content').slideToggle({
+    step: function() {
+      about_boxes.update();
+    }
+  });
+})
+
+$('.about_boxes .selectors .selector_btn').click(function() {
+  $('.about_boxes .selectors .selector_btn').removeClass('__active');
+  $(this).addClass('__active')
+  let pos = $(this).data('pos')
+  about_boxes.slideTo(pos);
+})
+
 const review_slider = new Swiper('.about_contents .reviews .swiper', {
   pagination: {
     el: '.about_contents .reviews .swiper-pagination',
@@ -172,9 +194,4 @@ $('.double_slider').each(function() {
 
   // img_slider.controller.control = info_slider;
   info_slider.controller.control = img_slider;
-})
-
-$('.about_faq .section .section_btn').click(function() {
-  
-  $(this).siblings('.content').slideToggle();
 })
