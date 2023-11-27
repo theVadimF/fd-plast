@@ -8,6 +8,47 @@
   <link rel="stylesheet" href="./js/lib/swiper/swiper-bundle.min.css">
 </head>
 <body>
+  <div class="popup __job_form" style="display: none;">
+    <div class="job_form request_box">
+      <div class="request_form content-wrap">
+        <h3>Станьте частью нашей <br>команды, отправьте свое <br>резюме</h3>
+        <div class="right">
+          <div class="form_grid">
+            <input type="text" class="input main_text" placeholder="Ваше имя">
+            <input type="text" class="input main_text" placeholder="Телефон">
+            <input type="text" class="input main_text" placeholder="E-mail">
+            <input type="text" class="input main_text" placeholder="Комментарий">
+          </div>
+          <input type="text" class="input __wide main_text" placeholder="Комментарий">
+          <label for="requisites" class="file_lable main_text requisites_label">Прикрепить файл (загрузите свое подготовленное резюме DOC, PDF)</label>
+          <input type="file" id="requisites" class="file requisites_file">
+          <div class="checkbox_wrap">
+            <input type="checkbox" name="legal1" id="legal1" class="input">
+            <label for="legal1" class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_708_8249)">
+                <path class="check" d="M4 10.5L9.5 15L16.5 6" stroke="white"></path>
+                <rect x="0.5" y="0.5" width="19" height="19" stroke="white"></rect>
+                </g>
+                <defs>
+                <clipPath id="clip0_708_8249">
+                <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"></rect>
+                </clipPath>
+                </defs>
+              </svg>
+            </label>
+            <label for="legal1" class="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</label>
+          </div>
+          <button class="submit main_text">Отправить</button>
+        </div>
+        <button class="form_back transparent_btn" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ce8b8ed7e8f6e296" aria-disabled="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="top">
       <div class="header-wrap display">
@@ -108,13 +149,13 @@
   </header>
   <div class="outer-wrap">
     <div class="about_top content-wrap">
-      <div class="top">
-        <h2>Московский завод<br>FDplast</h2>
+      <div class="page_topper">
+        <h2 class="title">Московский завод <br>FDplast</h2>
         <p class="main_text">Московский завод FDplast входит в число крупнейших российских производителей полипропиленовых труб и фитингов для систем водоснабжения и отопления. Продукция под торговой маркой FD производится на протяжении 20 лет и за это время прекрасно зарекомендовала себя не только на российском рынке, но и в странах ближнего зарубежья.</p>
       </div>
       <div class="about_counters">
         <div class="counter">
-          <div class="top_section">
+          <div class="top_section __no_size">
             <div class="counter_wrap">
               <div class="align_img">
                 <p class="number">2</p>
@@ -658,6 +699,491 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="outer-wrap about_history">
+    <div class="content-wrap">
+      <div class="page_topper">
+        <h2 class="title">История завода<br> FDplast</h2>
+        <p class="main_text">Московский завод FDplast входит в число крупнейших российских производителей полипропиленовых труб и фитингов для систем водоснабжения и отопления. Продукция под торговой маркой FD производится на протяжении 20 лет и за это время прекрасно зарекомендовала себя не только на российском рынке.</p>
+      </div>
+      <div class="swiper history_timeline">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="year_slide">
+              <p class="h5 year">2008</p>
+              <div class="point_wrap">
+                <div class="point"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="year_slide">
+              <p class="h5 year">2011</p>
+              <div class="point_wrap">
+                <div class="point"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="year_slide">
+              <p class="h5 year">2014</p>
+              <div class="point_wrap">
+                <div class="point"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="year_slide">
+              <p class="h5 year">2017</p>
+              <div class="point_wrap">
+                <div class="point"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line_wrap">
+          <button class="transparent_btn button prev">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="21" fill="#003466"/>
+              <g clip-path="url(#clip0_708_6965)">
+              <path d="M21.0609 16.1622L16.9074 20.3157H26.9805V21.6754H16.9074L20.7458 25.5138L19.7972 26.4624L14.3303 20.9955L20.1123 15.2135L21.0609 16.1622Z" fill="white"/>
+              <path d="M21.0609 16.1622L16.9074 20.3157H26.9805V21.6754H16.9074L20.7458 25.5138L19.7972 26.4624L14.3303 20.9955L20.1123 15.2135L21.0609 16.1622Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_708_6965">
+              <rect width="13.33" height="13.33" fill="white" transform="matrix(-1 0 0 -1 27.6602 27.6602)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <hr class="line">
+          <button class="transparent_btn button next">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="21" fill="#003466"/>
+              <g clip-path="url(#clip0_708_6964)">
+              <path d="M20.9294 25.828L25.0829 21.6746H15.0098V20.3149H25.0829L21.2444 16.4765L22.193 15.5278L27.6599 20.9947L21.878 26.7767L20.9294 25.828Z" fill="white"/>
+              <path d="M20.9294 25.828L25.0829 21.6746H15.0098V20.3149H25.0829L21.2444 16.4765L22.193 15.5278L27.6599 20.9947L21.878 26.7767L20.9294 25.828Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_708_6964">
+              <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="swiper history_items">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item">
+              <a href="">
+                <img src="./img/double_tube.png" alt="" class="img">
+              </a>
+              <div class="info">
+                <h5 class="title">Запуск новой линии</h5>
+                <p class="text">Запуск в производство гофрированной двухслойной трубы 110 и 160 D. Налажено производство многослойной армированной трубы FD ARM от 1 000 до 2 400 D с кольцевой жесткостью до SN 16.</p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Перейти в каталог со всеми товарами</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <a href="">
+                <img src="./img/double_tube.png" alt="" class="img">
+              </a>
+              <div class="info">
+                <h5 class="title">Запуск новой линии</h5>
+                <p class="text">Запуск в производство гофрированной двухслойной трубы 110 и 160 D. Налажено производство многослойной армированной трубы FD ARM от 1 000 до 2 400 D с кольцевой жесткостью до SN 16.</p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Перейти в каталог со всеми товарами</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <a href="">
+                <img src="./img/double_tube.png" alt="" class="img">
+              </a>
+              <div class="info">
+                <h5 class="title">Запуск новой линии</h5>
+                <p class="text">Запуск в производство гофрированной двухслойной трубы 110 и 160 D. Налажено производство многослойной армированной трубы FD ARM от 1 000 до 2 400 D с кольцевой жесткостью до SN 16.</p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Перейти в каталог со всеми товарами</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item">
+              <a href="">
+                <img src="./img/double_tube.png" alt="" class="img">
+              </a>
+              <div class="info">
+                <h5 class="title">Запуск новой линии</h5>
+                <p class="text">Запуск в производство гофрированной двухслойной трубы 110 и 160 D. Налажено производство многослойной армированной трубы FD ARM от 1 000 до 2 400 D с кольцевой жесткостью до SN 16.</p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Перейти в каталог со всеми товарами</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about_shorts">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="short_wrap">
+            <img src="./img/placeholder.jpg" alt="" class="short_placeholder">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="outer-wrap about_jobs">
+    <div class="content-wrap">
+      <div class="page_topper">
+        <h2 class="title">Приглашаем в нашу<br> команду</h2>
+        <p class="main_text">Московский завод FDplast входит в число крупнейших российских производителей полипропиленовых труб и фитингов для систем водоснабжения и отопления. Продукция под торговой маркой FD производится на протяжении 20 лет и за это время прекрасно зарекомендовала себя не только на российском рынке.</p>
+      </div>
+      <div class="listings">
+
+        <div class="listing">
+          <button class="listing_btn transparent_btn h5">
+            <div class="info">
+              <span>Менеджер по работе с клиентами</span>
+              <span>г. Москва</span>
+              <span>от 72 250 руб. до 150 000 руб.</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+              <g clip-path="url(#clip0_708_6915)">
+                <path d="M14.8575 4.24308L14.8737 14.1264M14.8737 14.1264L14.8575 24.0421M14.8737 14.1264L4.95801 14.1426M14.8737 14.1264L24.757 14.1426" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_708_6915">
+                  <rect width="20" height="20" fill="white" transform="translate(0.71582 14.1426) rotate(-45)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <div class="content" style="display: none;">
+            <p class="text bold">Обязанности:</p>
+            <ul class="main_list text">
+              <li>Работа с существующей клиентской базой, развитие и разработка корпоративных клиентов, выстраивание долгосрочных, деловых отношений с клиентами (наши постоянные клиенты с которыми уже заключены договора поставок).</li>
+              <li>Планирование и проведение деловых переговоров и встреч с первыми лицами компаний как с существующими, так и потенциальными клиентами, анализ потребностей, стимулирование на сотрудничество с заводом.</li>
+              <li>Прием и обработка заказов, выставление счетов (работа с 1С).</li>
+              <li>Контроль оплаты счетов и отгрузок.</li>
+              <li>Выполнение финансового плана.</li>
+              <li>Консультирование клиентов по продукции, новинкам, акциям и т. д., продажа дополнительных товаров компании, расширение линейки спроса клиентка, поддержка интереса клиента к продукции Завода.</li>
+              <li>Работа с претензиями.</li>
+              <li>Участие в выставках.</li>
+              <li>Ведение документооборота, заключение и пролонгированные договоров.</li>
+              <li>Составление еженедельных отчетов, ежемесячное планирование продаж.</li>
+            </ul>
+            <button class="resume_btn main_text">Отправить резюме</button>
+          </div>
+        </div>
+        <div class="listing">
+          <button class="listing_btn transparent_btn h5">
+            <div class="info">
+              <span>Менеджер по работе с клиентами</span>
+              <span>г. Москва</span>
+              <span>от 72 250 руб. до 150 000 руб.</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+              <g clip-path="url(#clip0_708_6915)">
+                <path d="M14.8575 4.24308L14.8737 14.1264M14.8737 14.1264L14.8575 24.0421M14.8737 14.1264L4.95801 14.1426M14.8737 14.1264L24.757 14.1426" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_708_6915">
+                  <rect width="20" height="20" fill="white" transform="translate(0.71582 14.1426) rotate(-45)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <div class="content" style="display: none;">
+            <p class="text bold">Обязанности:</p>
+            <ul class="main_list text">
+              <li>Работа с существующей клиентской базой, развитие и разработка корпоративных клиентов, выстраивание долгосрочных, деловых отношений с клиентами (наши постоянные клиенты с которыми уже заключены договора поставок).</li>
+              <li>Планирование и проведение деловых переговоров и встреч с первыми лицами компаний как с существующими, так и потенциальными клиентами, анализ потребностей, стимулирование на сотрудничество с заводом.</li>
+              <li>Прием и обработка заказов, выставление счетов (работа с 1С).</li>
+              <li>Контроль оплаты счетов и отгрузок.</li>
+              <li>Выполнение финансового плана.</li>
+              <li>Консультирование клиентов по продукции, новинкам, акциям и т. д., продажа дополнительных товаров компании, расширение линейки спроса клиентка, поддержка интереса клиента к продукции Завода.</li>
+              <li>Работа с претензиями.</li>
+              <li>Участие в выставках.</li>
+              <li>Ведение документооборота, заключение и пролонгированные договоров.</li>
+              <li>Составление еженедельных отчетов, ежемесячное планирование продаж.</li>
+            </ul>
+            <button class="resume_btn main_text">Отправить резюме</button>
+          </div>
+        </div>
+        <div class="listing">
+          <button class="listing_btn transparent_btn h5">
+            <div class="info">
+              <span>Менеджер по работе с клиентами</span>
+              <span>г. Москва</span>
+              <span>от 72 250 руб. до 150 000 руб.</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+              <g clip-path="url(#clip0_708_6915)">
+                <path d="M14.8575 4.24308L14.8737 14.1264M14.8737 14.1264L14.8575 24.0421M14.8737 14.1264L4.95801 14.1426M14.8737 14.1264L24.757 14.1426" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_708_6915">
+                  <rect width="20" height="20" fill="white" transform="translate(0.71582 14.1426) rotate(-45)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <div class="content" style="display: none;">
+            <p class="text bold">Обязанности:</p>
+            <ul class="main_list text">
+              <li>Работа с существующей клиентской базой, развитие и разработка корпоративных клиентов, выстраивание долгосрочных, деловых отношений с клиентами (наши постоянные клиенты с которыми уже заключены договора поставок).</li>
+              <li>Планирование и проведение деловых переговоров и встреч с первыми лицами компаний как с существующими, так и потенциальными клиентами, анализ потребностей, стимулирование на сотрудничество с заводом.</li>
+              <li>Прием и обработка заказов, выставление счетов (работа с 1С).</li>
+              <li>Контроль оплаты счетов и отгрузок.</li>
+              <li>Выполнение финансового плана.</li>
+              <li>Консультирование клиентов по продукции, новинкам, акциям и т. д., продажа дополнительных товаров компании, расширение линейки спроса клиентка, поддержка интереса клиента к продукции Завода.</li>
+              <li>Работа с претензиями.</li>
+              <li>Участие в выставках.</li>
+              <li>Ведение документооборота, заключение и пролонгированные договоров.</li>
+              <li>Составление еженедельных отчетов, ежемесячное планирование продаж.</li>
+            </ul>
+            <button class="resume_btn main_text">Отправить резюме</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="outer-wrap about_photo_grid">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __1">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __2">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __3">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __4">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __5">
+    <img src="./img/placeholder.jpg" alt="" class="grid_img __6">
+  </div>
+  <div class="outer_wrap">
+    <div class="docs_block content-wrap">
+      <div class="swiper docs_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="block">
+              <img src="./img/catalog.png" alt="" class="img __catalog">
+              <h5 class="title">Технический каталог</h5>
+              <p class="text">Системы наружной канализации</p>
+              <button class="choose main_text" data-type="catalog">
+                <span>Скачать</span>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                  <g clip-path="url(#clip0_708_7349)">
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_708_7349">
+                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="block">
+              <img src="./img/catalog.png" alt="" class="img __catalog">
+              <h5 class="title">Технический каталог</h5>
+              <p class="text">Системы наружной канализации</p>
+              <button class="choose main_text" data-type="catalog">
+                <span>Скачать</span>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                  <g clip-path="url(#clip0_708_7349)">
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_708_7349">
+                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="block">
+              <img src="./img/catalog.png" alt="" class="img __catalog">
+              <h5 class="title">Технический каталог</h5>
+              <p class="text">Системы наружной канализации</p>
+              <button class="choose main_text" data-type="catalog">
+                <span>Скачать</span>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                  <g clip-path="url(#clip0_708_7349)">
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_708_7349">
+                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_bottom">
+          <p class="counter">1 / 0</span></p>
+          <div class="buttons">
+            <button class="prev transparent_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <g clip-path="url(#clip0_650_1548)">
+                  <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
+                  <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_650_1548">
+                    <rect width="15" height="15" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="next transparent_btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <path d="M7.42634 12.9383L12.1002 8.26447H0.765137V6.73443H12.1002L7.78086 2.41512L8.84828 1.34766L15.0001 7.49945L8.49378 14.0058L7.42634 12.9383Z" fill="#003466"/>
+                <path d="M7.42634 12.9383L12.1002 8.26447H0.765137V6.73443H12.1002L7.78086 2.41512L8.84828 1.34766L15.0001 7.49945L8.49378 14.0058L7.42634 12.9383Z" fill="#003466"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="transparent_btn btn prev">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="42" height="42" rx="21" fill="#003466"/>
+          <g clip-path="url(#clip0_708_6884)">
+          <path d="M21.0609 16.1617L16.9074 20.3152H26.9805V21.6749H16.9074L20.7458 25.5133L19.7972 26.4619L14.3303 20.995L20.1123 15.2131L21.0609 16.1617Z" fill="white"/>
+          <path d="M21.0609 16.1617L16.9074 20.3152H26.9805V21.6749H16.9074L20.7458 25.5133L19.7972 26.4619L14.3303 20.995L20.1123 15.2131L21.0609 16.1617Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_708_6884">
+          <rect width="13.33" height="13.33" fill="white" transform="matrix(-1 0 0 -1 27.6602 27.6602)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <button class="transparent_btn btn next">
+        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="42" height="42" rx="21" fill="#003466"/>
+          <g clip-path="url(#clip0_708_6883)">
+          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_708_6883">
+          <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </button>
     </div>
   </div>
   <footer>

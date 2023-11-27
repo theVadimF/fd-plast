@@ -192,6 +192,75 @@ $('.double_slider').each(function() {
     effect: 'fade'
   });
 
-  // img_slider.controller.control = info_slider;
   info_slider.controller.control = img_slider;
+})
+
+$('.about_jobs .listings .listing_btn').click(function() {
+  $(this).siblings('.content').slideToggle();
+})
+
+const history_timeline = new Swiper('.history_timeline', {
+  slidesPerView: 3,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.history_timeline .line_wrap .next',
+    prevEl: '.history_timeline .line_wrap .prev',
+  },
+  breakpoints: {
+    1030: {
+      slidesPerView: 4,
+    }
+  },
+});
+
+const history_items = new Swiper('.history_items', {
+  // noSwiping: true,
+  // noSwipingClass: 'swiper-slide',
+});
+
+history_timeline.controller.control = history_items;
+history_items.controller.control = history_timeline;
+
+const about_shorts = new Swiper('.about_shorts .swiper', {
+  freeMode: true,
+  slidesPerView: "auto",
+  spaceBetween: 20,
+})
+
+const docs_slider = new Swiper('.docs_slider', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.docs_block .btn.next',
+    prevEl: '.docs_block .btn.prev',
+  },
+  breakpoints: {
+    1100: {
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.docs_block .btn.next',
+        prevEl: '.docs_block .btn.prev',
+      },
+    }
+  },
+  pagination: {
+    el: '.docs_block .mobile_bottom .counter',
+    type: "fraction",
+  },
+})
+
+$('.docs_block .mobile_bottom .next').click(function() {
+  docs_slider.slideNext();
+})
+
+$('.docs_block .mobile_bottom .prev').click(function() {
+  docs_slider.slidePrev();
+})
+
+$('.resume_btn').click(function() {
+  $('.popup.__job_form').fadeIn();
+})
+
+$('.job_form .form_back').click(function() {
+  $('.popup.__job_form').fadeOut();
 })
