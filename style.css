@@ -2158,6 +2158,7 @@ footer .go_up {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  pointer-events: none;
 }
 
 .partners_slides .swiper .controls .btn {
@@ -2165,6 +2166,7 @@ footer .go_up {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+  pointer-events: all;
 }
 
 .partners_slides .swiper .controls .btn.prev {
@@ -2295,6 +2297,24 @@ footer .go_up {
     grid-column: 1/3;
     grid-row: 4;
   }
+
+  .partner_top {
+    grid-template-columns: 500px 1fr;
+    gap: 0 40px;
+  }
+
+  .partner_top.__2 {
+    grid-template-columns: 1fr 675px;
+  }
+
+/* 
+  .partner_top .heading {
+    margin-top: 0;
+  }
+
+  .partner_top .img {
+    margin-top: 20px;
+  } */
 }
 
 @media (max-width: 1380px) {
@@ -2476,6 +2496,32 @@ footer .go_up {
     width: 100%;
     text-align: center;
   }
+
+  .partner_top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partner_top .heading {
+    margin-top: 0;
+  }
+
+  .partner_top.__2 .heading {
+    margin-top: 0;
+  }
+
+  .partner_top .img {
+    margin-top: 32px;
+  }
+
+  .partner_top .blue_btn {
+    margin-top: 32px;
+    width: 100%;
+  }
+
+  .partner_top.__2 {
+    margin-top: 112px;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -2507,6 +2553,12 @@ footer .go_up {
   .index_products .products .product .img {
     width: 160px;
     height: 160px;
+  }
+
+  .partner_blocks .listing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -2815,6 +2867,84 @@ footer .go_up {
   }
 
   .page_404 .img {
+    height: 382px;
+  }
+
+  .blue_btn {
+    padding: 9px 21px;
+  }
+
+  .about_why_us .heading br {
+    display: none;
+  }
+
+  .about_why_us .heading {
+    margin-bottom: 56px;
+  }
+
+  .about_why_us .slide .graphic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about_why_us .reversible {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about_why_us .nav_bar {
+    margin-bottom: 0;
+    margin-top: 32px;
+  }
+
+  .about_why_us .nav_bar .counter {
+    display: none;
+  }
+
+  .about_why_us .nav_bar .buttons {
+    margin-left: auto;
+  }
+
+  .about_why_us .blue_btn {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .partner_blocks .selectors {
+    grid-template-columns: repeat(6, 130px);
+    overflow-x: auto;
+  }
+
+  .partner_blocks .listing {
+    padding: 20px 0;
+  }
+
+  .partners_slides .img {
+    width: 358px;
+    height: 532px;
+  }
+
+  .partners_slides .swiper {
+    height: 532px;
+  }
+
+  .partners_slides .heading {
+    margin-bottom: 32px;
+  }
+
+  .partners_slides {
+    margin-bottom: 112px;
+  }
+
+  .partner_fag {
+    margin-bottom: 123px;
+  }
+
+  .partner_top .img.__right {
+    height: 382px;
+  }
+
+  .partner_top .img.__left {
     height: 382px;
   }
 }

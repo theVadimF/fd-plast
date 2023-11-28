@@ -270,22 +270,23 @@ $('.job_form .form_back').click(function() {
 })
 
 const why_us_slider = new Swiper('.about_why_us .swiper', {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   spaceBetween: 24,
   navigation: {
     nextEl: '.about_why_us .buttons .next',
     prevEl: '.about_why_us .buttons .prev',
   },
-  // breakpoints: {
-  //   1100: {
-  //     slidesPerView: 2,
-  //     navigation: {
-  //       nextEl: '.docs_block .btn.next',
-  //       prevEl: '.docs_block .btn.prev',
-  //     },
-  //   }
-  // },
+  breakpoints: {
+    1300: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    880: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    }
+  },
   pagination: {
     el: '.about_why_us .nav_bar .counter',
     type: "fraction",
@@ -323,9 +324,14 @@ $('.partner_blocks .documents .load_more').click(function() {
 const partner_img = new Swiper('.partners_slides .swiper', {
   loop: true,
   centeredSlides: true,
-  spaceBetween: -60,
+  spaceBetween: -30,
   // spaceBetween: 20,
   slidesPerView: 'auto',
+  breakpoints: {
+    800: {
+      spaceBetween: -60,
+    },
+  },
   navigation: {
     nextEl: '.partners_slides .swiper .controls .next',
     prevEl: '.partners_slides .swiper .controls .prev',
