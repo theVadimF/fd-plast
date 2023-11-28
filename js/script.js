@@ -153,12 +153,16 @@ const about_boxes = new Swiper('.about_boxes .main_swiper', {
   noSwipingClass: 'swiper-slide',
 });
 
-$('.about_faq .section .section_btn').click(function() {
+$('.about_boxes .about_faq .section .section_btn').click(function() {
   $(this).siblings('.content').slideToggle({
     step: function() {
       about_boxes.update();
     }
   });
+})
+
+$('.about_faq .section .section_btn').click(function() {
+  $(this).siblings('.content').slideToggle()
 })
 
 $('.about_boxes .selectors .selector_btn').click(function() {
@@ -263,4 +267,84 @@ $('.resume_btn').click(function() {
 
 $('.job_form .form_back').click(function() {
   $('.popup.__job_form').fadeOut();
+})
+
+const why_us_slider = new Swiper('.about_why_us .swiper', {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: '.about_why_us .buttons .next',
+    prevEl: '.about_why_us .buttons .prev',
+  },
+  // breakpoints: {
+  //   1100: {
+  //     slidesPerView: 2,
+  //     navigation: {
+  //       nextEl: '.docs_block .btn.next',
+  //       prevEl: '.docs_block .btn.prev',
+  //     },
+  //   }
+  // },
+  pagination: {
+    el: '.about_why_us .nav_bar .counter',
+    type: "fraction",
+  },
+})
+
+const partner_blocks = new Swiper('.partner_blocks .docs_swiper', {
+  autoHeight: true,
+  effect: 'fade',
+  noSwiping: true,
+  noSwipingClass: '.docs_swiper > .swiper-slide',
+})
+
+$('.partner_top .open_tech_doc').click(function() {
+  partner_blocks.slideTo(1);
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $('.partner_blocks').offset().top
+  }, 500);
+  $('.partner_blocks .selectors .selector_btn').removeClass('__active');
+  $('.partner_blocks .selectors .selector_btn[data-pos=1]').addClass('__active');
+})
+
+$('.partner_blocks .selectors .selector_btn').click(function() {
+  $('.partner_blocks .selectors .selector_btn').removeClass('__active');
+  $(this).addClass('__active');
+  partner_blocks.slideTo($(this).data('pos'));
+})
+
+$('.partner_blocks .documents .load_more').click(function() {
+  $(this).addClass('__hidden');
+  $(this).siblings('.hidden').addClass('__shown');
+  partner_blocks.update();
+})
+
+const partner_img = new Swiper('.partners_slides .swiper', {
+  loop: true,
+  centeredSlides: true,
+  spaceBetween: -60,
+  // spaceBetween: 20,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.partners_slides .swiper .controls .next',
+    prevEl: '.partners_slides .swiper .controls .prev',
+  },
+})
+
+// $('.partners_slides .img').on('transition', function() {
+//   console.log('test');
+//   partner_img.update();
+// })
+
+$('.open_contact').click(function() {
+  $('.popup.__contact_form').fadeIn();
+})
+
+$('.partner_top .open_patner').click(function() {
+  $('.popup.__dealer_form').fadeIn();
+})
+
+$('.popup.__dealer_form .request_form .form_back').click(function() {
+  $('.popup.__dealer_form').fadeOut();
 })
