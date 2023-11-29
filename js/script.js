@@ -321,6 +321,12 @@ $('.partner_blocks .documents .load_more').click(function() {
   partner_blocks.update();
 })
 
+$('.product_card_tech_docs .load_more').click(function() {
+  $(this).addClass('__hidden');
+  $(this).siblings('.hidden').addClass('__shown');
+  partner_blocks.update();
+})
+
 const partner_img = new Swiper('.partners_slides .swiper', {
   loop: true,
   centeredSlides: true,
@@ -353,4 +359,49 @@ $('.partner_top .open_patner').click(function() {
 
 $('.popup.__dealer_form .request_form .form_back').click(function() {
   $('.popup.__dealer_form').fadeOut();
+})
+
+const gallery_slider = new Swiper('.product_card_top .main_gallery', {
+})
+
+const gallery_thumbs = new Swiper('.product_card_top .gallery_thumbnails', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+})
+
+$('.product_card_top .info .option .option_btn').click(function() {
+  $(this).siblings('.contents_wrap').children('.contents').slideToggle('fast');
+})
+
+$('.product_card_top .info .option .contents .option_selector').click(function() {
+  $(this).parent().parent().parent().find('.value').text($(this).text());
+  $(this).parent().slideUp();
+})
+
+const bought_together_slider = new Swiper ('.bought_together_slider', {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.bought_together .nav.next',
+    prevEl: '.bought_together .nav.prev',
+  },
+})
+
+const docs_slider_main = new Swiper ('.docs_block .docs_slider_main', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    1270: {
+      slidesPerView: 2,
+    }
+  },
+  navigation: {
+    nextEl: '.docs_block .nav_line .nav.next',
+    prevEl: '.docs_block .nav_line .nav.prev',
+  },
+  pagination: {
+    el: '.docs_block .nav_line .counter',
+    type: "fraction",
+  },
 })
