@@ -426,6 +426,10 @@ header .bottom .header-wrap {
   border-radius: 27px;
 }
 
+.request_box.__last_el {
+  margin-bottom: 221px;
+}
+
 .request_box  .request_initial {
   display: flex;
   padding-top: 88px;
@@ -2196,6 +2200,78 @@ footer .go_up {
   gap: 49px;
 }
 
+.catalog_top .top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.catalog_top .top .catalog_counter {
+  color: var(--Black---text, #020002);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 0 7px;
+  height: fit-content;
+  border-radius: 3px;
+  border: 1px solid var(--Grey---text, #666F78);
+}
+
+.catalog_top {
+  margin-top: 49px;
+  margin-bottom: 49px;
+}
+
+.catalog_top .crumbs {
+  display: flex;
+  gap: 10px;
+  color: var(--Grey---text, #666F78);
+}
+
+.catalog_top .crumbs a {
+  color: var(--Grey---text, #666F78);
+  text-decoration: none;
+}
+
+.catalog_categories .section .cat_wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--Black---text, #020002);
+}
+
+.catalog_categories .section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.catalog_categories .col {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.catalog_categories .col .section:last-child {
+  margin-top: auto;
+}
+
+.catalog_categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 98px;
+}
+
+.catalog_categories .section .cat_wrap .cat_img {
+  width: 182px;
+  height: 112px;
+  object-fit: contain;
+  border: 1px solid var(--Blue-light, #DDE7F8);
+}
+
 @media (max-width: 1910px) {
   .index_advantages {
     gap: 100px;
@@ -2601,6 +2677,12 @@ footer .go_up {
   .history_items .item {
     margin-left: 0;
   }
+
+  .catalog_categories {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -2946,6 +3028,36 @@ footer .go_up {
 
   .partner_top .img.__left {
     height: 382px;
+  }
+
+  .catalog_categories .section .cat_wrap .cat_img {
+    height: 77px;
+    width: 77px;
+    border: none;
+  }
+
+  .catalog_categories .section .cat_wrap {
+    width: 100%;
+    border: 1px solid var(--Blue-light, #DDE7F8);
+  }
+
+  .catalog_categories .section {
+    gap: 5px;
+  }
+
+  .catalog_categories .section .cat_title {
+    margin-bottom: 19px;
+  }
+  .catalog_categories .col {
+    gap: 56px;
+  }
+
+  .catalog_categories {
+    gap: 56px;
+  }
+
+  .request_box.__last_el {
+    margin-bottom: 112px;
   }
 }
 
