@@ -2774,6 +2774,89 @@ a.blue_btn {
   padding-left: 10px;
 }
 
+.catalog_section .catalog_heading {
+  color: var(--Black---text, #020002);
+  font-family: Inter;
+  font-size: 32.871px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44.246px; /* 134.602% */
+  margin-bottom: 28px;
+}
+
+.catalog_section .catalog_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--Black);
+  text-decoration: none;
+  border: 1px solid var(--Blue-light, #DDE7F8);
+  
+}
+
+.catalog_section .catalog_block .title {
+  padding-left: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.catalog_section .catalog_block .img {
+  height: 267px;
+  width: auto;
+  object-fit: contain;
+  margin-left: auto;
+  margin-top: auto;
+  max-width: 100%;
+}
+
+
+.catalog_section .catalog_block .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--Blue-light, #DDE7F8);
+}
+
+.catalog_section .catalog_block .bottom .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.catalog_section .catalog_blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 98px 20px;
+}
+
+.catalog_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog_section .load_more {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.catalog_section .load_more.__hidden {
+  display: none;
+}
+
+.catalog_main .catalog_wrap {
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  gap: 137px;
+  width: 100%;
+}
+
+.catalog_main {
+  margin-bottom: 207px;
+}
+
 @media (max-width: 1910px) {
   .index_advantages {
     gap: 100px;
@@ -3787,6 +3870,46 @@ a.blue_btn {
 
   .fav_add_popup .bottom .btns {
     gap: 10px;
+  }
+
+  .catalog_section .catalog_blocks {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .catalog_section .catalog_block {
+    display: grid;
+    grid-template-columns: 144px 1fr;
+    gap: 12px 10px;
+  }
+
+  .catalog_section .catalog_block .img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 144px;
+    margin-top: 12px;
+  }
+
+  .catalog_section .catalog_block .bottom {
+    grid-column: 1/3;
+    padding: 10px;
+  }
+
+  .catalog_section .catalog_heading {
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .catalog_section .load_more {
+    margin-top: 24px;
+    width: 100%;
+  }
+
+  .catalog_main {
+    margin-bottom: 80px;
   }
 }
 
