@@ -120,22 +120,41 @@ $('.index_dealers .selector_btn').click(function() {
 })
 
 $('.index_news_slider').each(function() {
-  const swiper = new Swiper(this, {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
+  const news_swiper = new Swiper(this, {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     spaceBetween: 18,
     navigation: {
       nextEl: '.index_press .slider_wrap .nav.next',
       prevEl: '.index_press .slider_wrap .nav.prev',
     },
+    pagination: {
+      el: '.index_news_slider .counter',
+      type: "fraction",
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      600: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    }
   });
+
+  $('.index_news_slider .mobile_nav .m_nav.next').click(function() {
+    news_swiper.slideNext()
+  })
+
+  $('.index_news_slider .mobile_nav .m_nav.prev').click(function() {
+    news_swiper.slidePrev()
+  })
 })
 
 $('.docs_block .choose').click(function() {
-  console.log($(this).data('type'));
-  let type = $(this).data('type')
-  $('.docs_block .email_form').data("type", type);
-  $('.docs_block .email_form').fadeIn();
+  $('.popup.__email').fadeIn();
 })
 
 $('.docs_block .email_form .close').click(function() {
@@ -297,7 +316,7 @@ const partner_blocks = new Swiper('.partner_blocks .docs_swiper', {
   autoHeight: true,
   effect: 'fade',
   noSwiping: true,
-  noSwipingClass: '.docs_swiper > .swiper-slide',
+  noSwipingClass: 'swiper-slide',
 })
 
 $('.partner_top .open_tech_doc').click(function() {
@@ -359,6 +378,10 @@ $('.partner_top .open_patner').click(function() {
 
 $('.popup.__dealer_form .request_form .form_back').click(function() {
   $('.popup.__dealer_form').fadeOut();
+})
+
+$('.popup.__email .form_back').click(function() {
+  $('.popup.__email').fadeOut();
 })
 
 const gallery_slider = new Swiper('.product_card_top .main_gallery', {
