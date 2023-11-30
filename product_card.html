@@ -85,6 +85,31 @@
       </div>
     </div>
   </div>
+  <div class="popup __fav_add" style="display: none;">
+    <div class="fav_add_popup">
+      <div class="top">
+        <h3>Отвод 90° черный</h3>
+        <p class="main_text">Товар добавлен в избранное</p>
+      </div>
+      <img src="./img/90deg.png" alt="" class="img">
+      <div class="bottom">
+        <div class="left">
+          <p class="main_text">Диаметр, мм: OD_110-400, ID_110-400</p>
+          <p class="main_text">Кольцевая жесткость: SN8</p>
+          <p class="main_text">Давление: безнапорное</p>
+        </div>
+        <div class="btns">
+          <a href="" class="blue_btn __black main_text">Вернуться</a>
+          <a href="" class="blue_btn main_text">Перейти к оформлению</a>
+        </div>
+      </div>
+      <button class="transparent_btn close">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
   <header>
     <div class="top">
       <div class="header-wrap display">
@@ -317,352 +342,401 @@
     </div>
   </div>
 
-  <div class="outer-wrap">
+  <div class="outer-wrap product_card_boxes">
     <div class="content-wrap">
-      <div class="product_card_about">
-        <p class="about_heading">Двухслойная гофрированная труба с монолитным раструбом</p>
-        <p class="about_text">
-          Гофрированная полиэтиленовая труба представляет собой двухслойную конструкцию, имеющую гладкую внутреннюю поврехность и наружные гофрированные слои, окрашенные в цвета, устойчивые к воздействию ультрафиолета. Гладкая внутренняя поверхность трубы способствует быстрому перемещению эвакуируемых жидкостей и предотвращает образование налёта на стенках. Краска светлых тонов обеспечивает хорошую видимость во время диагностики сетей.
-        </p>
-        <div class="about_grid">
-          <div class="item">
-            <h5 class="blue">Область применения</h5>
-            <p class="about_text">
-              Московский завод FDplast осуществляет производство двухслойных гофрированных труб, которые позволяют решить проблемы потоплений, возникающих при неправильно спроектированной конструкции дорожного полотна или при строительстве дороги, открытых площадок.
-            </p>
-          </div>
-          <div class="item __right">
-            <h5 class="blue">Преимущества</h5>
-            <p class="about_text">
-              Трубы экономичны, просты в монтаже. Обеспечивают герметичность трубопроводов и отличные гидравлические характеристики.
-            </p>
-          </div>
-          <div class="item">
-            <p class="about_heading __long_margin">Тип соединения</p>
-            <p class="about_text">Раструбное соединение осуществляется с помошью уплотнительного кольца, без раструбное применяют соединительные муфты ДГТ.</p>
-            <div class="mini_grid">
-              <div class="block">
-                <h5 class="blue">С раструбом</h5>
-                <p class="text">длина трубы 6,2 метра</p>
-              </div>
-              <div class="block">
-                <h5 class="blue">Без раструба</h5>
-                <p class="text">длина трубы 6 метров</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="main_text link_with_arrow">
-          <span>Оборудование для монтажа</span>
-          <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="42" height="42" rx="21" fill="#003466"></rect>
-            <g clip-path="url(#clip0_708_8210)">
-            <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-            <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-            </g>
-            <defs>
-            <clipPath id="clip0_708_8210">
-            <rect width="13.33" height="13.33" fill="white" transform="translate(14.33 14.3301)"></rect>
-            </clipPath>
-            </defs>
-          </svg>
-        </a>
+      <div class="selectors">
+        <button class="selector_btn transparent_btn __active h5" data-pos="0">Описание</button>
+        <button class="selector_btn transparent_btn h5" data-pos="1">Ассортимент ПЭ трубы</button>
+        <button class="selector_btn transparent_btn h5" data-pos="2">Каталог</button>
+        <button class="selector_btn transparent_btn h5" data-pos="3">Техническая документация</button>
       </div>
-      <div class="product_card_table_slide">
-        <p class="main_text">
-          Двухслойные гофрированные трубы с монолитным раструбом производидимые на Московском заводе FDplast на современном оборудовании в соответствии с ГОСТ 54475-2011.
-        </p>
-        <div class="about_table main_text">
-          <table>
-            <tr>
-              <th colspan="100%" class="table_top">SN6-7</th>
-            </tr>
-            <tr>
-              <th class="left">Наружный диаметр, ID мм</th>
-              <th>230</th>
-              <th>250</th>
-              <th>290</th>
-              <th>315</th>
-              <th>340</th>
-              <th>400</th>
-              <th>460</th>
-              <th>500</th>
-              <th>575</th>
-              <th>630</th>
-              <th>695</th>
-              <th>800</th>
-              <th>923</th>
-              <th>1000</th>
-              <th>1200</th>
-            </tr>
-            <tr>
-              <th class="left">Внутренний диаметр, OD мм</th>
-              <th>200</th>
-              <th>216</th>
-              <th>250</th>
-              <th>271</th>
-              <th>300</th>
-              <th>343</th>
-              <th>400</th>
-              <th>427</th>
-              <th>500</th>
-              <th>535</th>
-              <th>600</th>
-              <th>687</th>
-              <th>800</th>
-              <th>851</th>
-              <th>1030</th>
-            </tr>
-          </table>
-        </div>
-        <div class="about_table main_text">
-          <table>
-            <tr>
-              <th colspan="100%" class="table_top">SN6-7</th>
-            </tr>
-            <tr>
-              <th class="left">Наружный диаметр, ID мм</th>
-              <th>230</th>
-              <th>250</th>
-              <th>290</th>
-              <th>315</th>
-              <th>340</th>
-              <th>400</th>
-              <th>460</th>
-              <th>500</th>
-              <th>575</th>
-              <th>630</th>
-              <th>695</th>
-              <th>800</th>
-              <th>923</th>
-              <th>1000</th>
-              <th>1200</th>
-            </tr>
-            <tr>
-              <th class="left">Внутренний диаметр, OD мм</th>
-              <th>200</th>
-              <th>216</th>
-              <th>250</th>
-              <th>271</th>
-              <th>300</th>
-              <th>343</th>
-              <th>400</th>
-              <th>427</th>
-              <th>500</th>
-              <th>535</th>
-              <th>600</th>
-              <th>687</th>
-              <th>800</th>
-              <th>851</th>
-              <th>1030</th>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="product_card_tech_docs">
-        <div class="listing __3col">
-          <p class="main_text">ГОСТ Р 54475-2011</p>
-          <p class="main_text">
-            «Трубы полимерные со структурированной стенкой и соединительные детали к ним для систем наружной канализации»
-          </p>
-          <a href="#" class="link_with_arrow main_text">
-            <span>Скачать</span>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="42" height="42" rx="21" fill="#003466"></rect>
-              <g clip-path="url(#clip0_708_7568)">
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              </g>
-              <defs>
-              <clipPath id="clip0_708_7568">
-              <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-              </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-        <div class="listing __3col">
-          <p class="main_text">ТУ 2248-001-99718665-2008</p>
-          <p class="main_text">
-            «Трубы безнапорные из полиэтилена, двухслойные, гофрированные»
-          </p>
-          <a href="#" class="link_with_arrow main_text">
-            <span>Скачать</span>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="42" height="42" rx="21" fill="#003466"></rect>
-              <g clip-path="url(#clip0_708_7568)">
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              </g>
-              <defs>
-              <clipPath id="clip0_708_7568">
-              <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-              </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-        <div class="listing __3col">
-          <p class="main_text">ТУ 2248-001-38314882-2012</p>
-          <p class="main_text">
-            «Трубы безнапорные полиэтиленовые многослойные, армированные FD ARM»
-          </p>
-          <a href="#" class="link_with_arrow main_text">
-            <span>Скачать</span>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="42" height="42" rx="21" fill="#003466"></rect>
-              <g clip-path="url(#clip0_708_7568)">
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-              </g>
-              <defs>
-              <clipPath id="clip0_708_7568">
-              <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-              </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </div>
-        <button class="blue_btn load_more main_text">Загрузить еще</button>
-        <div class="hidden">
-          <div class="listing __3col">
-            <p class="main_text">ГОСТ Р 54475-2011</p>
-            <p class="main_text">
-              «Трубы полимерные со структурированной стенкой и соединительные детали к ним для систем наружной канализации»
-            </p>
-            <a href="#" class="link_with_arrow main_text">
-              <span>Скачать</span>
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                <g clip-path="url(#clip0_708_7568)">
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_708_7568">
-                <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-          <div class="listing __3col">
-            <p class="main_text">ТУ 2248-001-99718665-2008</p>
-            <p class="main_text">
-              «Трубы безнапорные из полиэтилена, двухслойные, гофрированные»
-            </p>
-            <a href="#" class="link_with_arrow main_text">
-              <span>Скачать</span>
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                <g clip-path="url(#clip0_708_7568)">
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_708_7568">
-                <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-          <div class="listing __3col">
-            <p class="main_text">ТУ 2248-001-38314882-2012</p>
-            <p class="main_text">
-              «Трубы безнапорные полиэтиленовые многослойные, армированные FD ARM»
-            </p>
-            <a href="#" class="link_with_arrow main_text">
-              <span>Скачать</span>
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                <g clip-path="url(#clip0_708_7568)">
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_708_7568">
-                <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="docs_block">
-        <div class="swiper docs_slider_main">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="block">
-                <img src="./img/gost.png" alt="" class="img __gost">
-                <h5 class="title">Техническая документация</h5>
-                <p class="text">Сертификаты, ГОСТы и СНИПы на полиэтиленовые трубы и другую производимую продукцию Московского завода FDplast</p>
-                <button class="choose main_text" data-type="tech_docs">
-                  <span>Выбрать документацию</span>
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="42" height="42" rx="21" fill="#003466"/>
-                    <g clip-path="url(#clip0_708_7349)">
-                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_708_7349">
-                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-                </button>
+      <div class="product_card_slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product_card_about">
+              <p class="about_heading">Двухслойная гофрированная труба с монолитным раструбом</p>
+              <p class="about_text">
+                Гофрированная полиэтиленовая труба представляет собой двухслойную конструкцию, имеющую гладкую внутреннюю поврехность и наружные гофрированные слои, окрашенные в цвета, устойчивые к воздействию ультрафиолета. Гладкая внутренняя поверхность трубы способствует быстрому перемещению эвакуируемых жидкостей и предотвращает образование налёта на стенках. Краска светлых тонов обеспечивает хорошую видимость во время диагностики сетей.
+              </p>
+              <div class="about_grid">
+                <div class="item">
+                  <h5 class="blue">Область применения</h5>
+                  <p class="about_text">
+                    Московский завод FDplast осуществляет производство двухслойных гофрированных труб, которые позволяют решить проблемы потоплений, возникающих при неправильно спроектированной конструкции дорожного полотна или при строительстве дороги, открытых площадок.
+                  </p>
+                </div>
+                <div class="item __right">
+                  <h5 class="blue">Преимущества</h5>
+                  <p class="about_text">
+                    Трубы экономичны, просты в монтаже. Обеспечивают герметичность трубопроводов и отличные гидравлические характеристики.
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="about_heading __long_margin">Тип соединения</p>
+                  <p class="about_text">Раструбное соединение осуществляется с помошью уплотнительного кольца, без раструбное применяют соединительные муфты ДГТ.</p>
+                  <div class="mini_grid">
+                    <div class="block">
+                      <h5 class="blue">С раструбом</h5>
+                      <p class="text">длина трубы 6,2 метра</p>
+                    </div>
+                    <div class="block">
+                      <h5 class="blue">Без раструба</h5>
+                      <p class="text">длина трубы 6 метров</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block">
-                <img src="./img/catalog.png" alt="" class="img __catalog">
-                <h5 class="title">Каталоги</h5>
-                <p class="text">Московский завод FDplast предлагает своим партнерам, дилерам рекламную продукцию: технические и справочные каталоги, листовки, брошюры, демобоксы.</p>
-                <button class="choose main_text" data-type="catalog">
-                  <span>Выбрать документацию</span>
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="42" height="42" rx="21" fill="#003466"/>
-                    <g clip-path="url(#clip0_708_7349)">
-                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_708_7349">
-                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                    </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="nav_line">
-            <p class="counter">0 / 0</p>
-            <div class="btns">
-              <button class="transparent_btn nav prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_650_1243)">
-                  <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
-                  <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
+              <a href="#" class="main_text link_with_arrow">
+                <span>Оборудование для монтажа</span>
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                  <g clip-path="url(#clip0_708_8210)">
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
                   </g>
                   <defs>
-                  <clipPath id="clip0_650_1243">
-                  <rect width="15" height="15" fill="white"/>
+                  <clipPath id="clip0_708_8210">
+                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.33 14.3301)"></rect>
                   </clipPath>
                   </defs>
                 </svg>
-              </button>
-              <button class="transparent_btn nav next">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
-                  <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
-                </svg>
-              </button>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product_card_table_slide">
+              <p class="main_text">
+                Двухслойные гофрированные трубы с монолитным раструбом производидимые на Московском заводе FDplast на современном оборудовании в соответствии с ГОСТ 54475-2011.
+              </p>
+              <div class="about_table main_text">
+                <table>
+                  <tr>
+                    <th colspan="100%" class="table_top">SN6-7</th>
+                  </tr>
+                  <tr>
+                    <th class="left">Наружный диаметр, ID мм</th>
+                    <th>230</th>
+                    <th>250</th>
+                    <th>290</th>
+                    <th>315</th>
+                    <th>340</th>
+                    <th>400</th>
+                    <th>460</th>
+                    <th>500</th>
+                    <th>575</th>
+                    <th>630</th>
+                    <th>695</th>
+                    <th>800</th>
+                    <th>923</th>
+                    <th>1000</th>
+                    <th>1200</th>
+                  </tr>
+                  <tr>
+                    <th class="left">Внутренний диаметр, OD мм</th>
+                    <th>200</th>
+                    <th>216</th>
+                    <th>250</th>
+                    <th>271</th>
+                    <th>300</th>
+                    <th>343</th>
+                    <th>400</th>
+                    <th>427</th>
+                    <th>500</th>
+                    <th>535</th>
+                    <th>600</th>
+                    <th>687</th>
+                    <th>800</th>
+                    <th>851</th>
+                    <th>1030</th>
+                  </tr>
+                </table>
+              </div>
+              <div class="about_table main_text">
+                <table>
+                  <tr>
+                    <th colspan="100%" class="table_top">SN6-7</th>
+                  </tr>
+                  <tr>
+                    <th class="left">Наружный диаметр, ID мм</th>
+                    <th>230</th>
+                    <th>250</th>
+                    <th>290</th>
+                    <th>315</th>
+                    <th>340</th>
+                    <th>400</th>
+                    <th>460</th>
+                    <th>500</th>
+                    <th>575</th>
+                    <th>630</th>
+                    <th>695</th>
+                    <th>800</th>
+                    <th>923</th>
+                    <th>1000</th>
+                    <th>1200</th>
+                  </tr>
+                  <tr>
+                    <th class="left">Внутренний диаметр, OD мм</th>
+                    <th>200</th>
+                    <th>216</th>
+                    <th>250</th>
+                    <th>271</th>
+                    <th>300</th>
+                    <th>343</th>
+                    <th>400</th>
+                    <th>427</th>
+                    <th>500</th>
+                    <th>535</th>
+                    <th>600</th>
+                    <th>687</th>
+                    <th>800</th>
+                    <th>851</th>
+                    <th>1030</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="docs_block">
+              <div class="swiper docs_slider_main">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="block">
+                      <img src="./img/gost.png" alt="" class="img __gost">
+                      <h5 class="title">Техническая документация</h5>
+                      <p class="text">Сертификаты, ГОСТы и СНИПы на полиэтиленовые трубы и другую производимую продукцию Московского завода FDplast</p>
+                      <button class="choose main_text" data-type="tech_docs">
+                        <span>Выбрать документацию</span>
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="42" height="42" rx="21" fill="#003466"/>
+                          <g clip-path="url(#clip0_708_7349)">
+                          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_708_7349">
+                          <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+                          </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block">
+                      <img src="./img/catalog.png" alt="" class="img __catalog">
+                      <h5 class="title">Каталоги</h5>
+                      <p class="text">Московский завод FDplast предлагает своим партнерам, дилерам рекламную продукцию: технические и справочные каталоги, листовки, брошюры, демобоксы.</p>
+                      <button class="choose main_text" data-type="catalog">
+                        <span>Выбрать документацию</span>
+                        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="42" height="42" rx="21" fill="#003466"/>
+                          <g clip-path="url(#clip0_708_7349)">
+                          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                          <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_708_7349">
+                          <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+                          </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav_line">
+                  <p class="counter">0 / 0</p>
+                  <div class="btns">
+                    <button class="transparent_btn nav prev">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_650_1243)">
+                        <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
+                        <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_650_1243">
+                        <rect width="15" height="15" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <button class="transparent_btn nav next">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
+                        <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product_card_tech_docs">
+              <p class="main_text">Двухслойные гофрированные трубы с монолитным раструбом производидимые на Московском заводе FDplast на современном оборудовании в соответствии с ГОСТ 54475-2011 и ТУ 2248-001-99718665-2008.</p>
+              <div class="listing __3col">
+                <p class="main_text">ГОСТ Р 54475-2011</p>
+                <p class="main_text">
+                  «Трубы полимерные со структурированной стенкой и соединительные детали к ним для систем наружной канализации»
+                </p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="listing __3col">
+                <p class="main_text">ТУ 2248-001-99718665-2008</p>
+                <p class="main_text">
+                  «Трубы безнапорные из полиэтилена, двухслойные, гофрированные»
+                </p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <div class="listing __3col">
+                <p class="main_text">ТУ 2248-001-38314882-2012</p>
+                <p class="main_text">
+                  «Трубы безнапорные полиэтиленовые многослойные, армированные FD ARM»
+                </p>
+                <a href="#" class="link_with_arrow main_text">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7568)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7568">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+              <button class="blue_btn load_more main_text">Загрузить еще</button>
+              <div class="hidden">
+                <div class="listing __3col">
+                  <p class="main_text">ГОСТ Р 54475-2011</p>
+                  <p class="main_text">
+                    «Трубы полимерные со структурированной стенкой и соединительные детали к ним для систем наружной канализации»
+                  </p>
+                  <a href="#" class="link_with_arrow main_text">
+                    <span>Скачать</span>
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                      <g clip-path="url(#clip0_708_7568)">
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_708_7568">
+                      <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="listing __3col">
+                  <p class="main_text">ТУ 2248-001-99718665-2008</p>
+                  <p class="main_text">
+                    «Трубы безнапорные из полиэтилена, двухслойные, гофрированные»
+                  </p>
+                  <a href="#" class="link_with_arrow main_text">
+                    <span>Скачать</span>
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                      <g clip-path="url(#clip0_708_7568)">
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_708_7568">
+                      <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+                <div class="listing __3col">
+                  <p class="main_text">ТУ 2248-001-38314882-2012</p>
+                  <p class="main_text">
+                    «Трубы безнапорные полиэтиленовые многослойные, армированные FD ARM»
+                  </p>
+                  <a href="#" class="link_with_arrow main_text">
+                    <span>Скачать</span>
+                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                      <g clip-path="url(#clip0_708_7568)">
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_708_7568">
+                      <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product_card_big max-wrap">
+    <div class="swiper big_slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/multilayer.png" alt="" class="big_img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/2layer.png" alt="" class="big_img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/double_tube.png" alt="" class="big_img">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="outer-wrap">
+      <div class="selectors content-wrap">
+        <button class="transparent_btn selector h4 __active" data-pos="0">
+          <span>Раструб предназначен для соединенная труб между собой.</span>
+        </button>
+        <button class="transparent_btn selector h4" data-pos="1">
+          <span>Внешний гофрированный слой, выполняет защитные функции.</span>
+        </button>
+        <button class="transparent_btn selector h4" data-pos="2">
+          <span>Внутренний гладкий слой,  препятствует внутренним засорам.</span>
+        </button>
       </div>
     </div>
   </div>
@@ -674,35 +748,6 @@
         <p class="text">Вся продукция FD сертифицирована и производится в строгом соответствии с ГОСТ и международными стандартами. Каждая партия продукции проходит испытания в собственной лаборатории по контролю качества.</p>
       </div>
       <div class="faq_sections">
-        <div class="section">
-          <button class="transparent_btn section_btn h5">
-            <span>В чем заключаются преимущества работы с Заводом?</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-              <g clip-path="url(#clip0_708_6372)">
-                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_708_6372">
-                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <div class="content" style="display: none;">
-            <p class="text">Преимущества работы с Московским заводом FDplast:</p>
-            <ul class="main_list text">
-              <li>Гибкая система скидок и прозрачная ценовая политика.</li>
-              <li>Дилерам выдается официальный сертификат дилера, подтверждающий статус компании.</li>
-              <li>Возможность закрепления за дилером территории присутствия компании (область, регион, город).</li>
-              <li>Контактная информация о дилере размещается на сайте fdplast.ru, перенаправляются входящие клиенты.</li>
-              <li>Система резервирования тендеров, проектов, объектов.</li>
-              <li>Предоставляется полный комплект технической документации (тех. паспорта, руководства, сертификаты, презентации и т.д.), необходимой для продажи и продвижения труб и фитингов FD в регионе.</li>
-              <li>Предоставляется маркетинговая поддержка: печатная продукция (каталоги, листовки, брошюры), демо боксы, баннеры для размещения в точках продаж и на сайте компании, сувенирная продукция.</li>
-              <li>Отсрочка платежа при постоянной работе.</li>
-              <li>Предоставление компании-дилеру персонального менеджера.</li>
-            </ul>
-          </div>
-        </div>
         <div class="section">
           <button class="transparent_btn section_btn h5">
             <span>Является ли продукция Завода FDplast сертифицированной?</span>
@@ -738,7 +783,7 @@
         </div>
         <div class="section">
           <button class="transparent_btn section_btn h5">
-            <span>Как стать дилером завода?</span>
+            <span>Какие действуют гарантийные обязательства?</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
               <g clip-path="url(#clip0_708_6372)">
                 <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"></path>
@@ -752,15 +797,23 @@
           </button>
           <div class="content" style="display: none;">
             <p class="text">
-              Московский завод FDplast приглашает к сотрудничеству все заинтересованные лица, компании, работающие как в РФ, странах ближнего и дальнего зарубежья.<br>
-              Если Вы заинтересованы стать дилером Завода обращайтесь по телефону (495) 514-38-71 и направляйте информацию о Вашей компании на адрес электронной почты: zavod@fdplast.ru.
+              Вся продукция Московского завода FDplast является сертифицированной. Качество продукции соответствует государственным стандартам и единым санитарно-эпидемиологическим требованиям. Московский завод FDplast имеет собственную лабораторию по контролю качества продукции. Для анализа физико-механических показателей изделий используется самое современное оборудование. Проверка качества полипропиленовых труб и фитингов FD осуществляется на всех этапах производства продукции, при отгрузке на склад, при отгрузке клиенту.<br>
+              <br>
+              Гарантия не распространяется на дефекты, возникшие в случаях:
             </p>
-            
+            <ul class="main_list text">
+              <li>нарушения условий хранения, проектирования, монтажа, испытаний, эксплуатации;</li>
+              <li>ненадлежащей транспортировки и погрузочно-разгрузочных работ;</li>
+              <li>наличия следов воздействия веществ, агрессивных к материалам изделия;</li>
+              <li>наличия следов механического, термического воздействия;</li>
+              <li>наличия повреждений, вызванных пожаром, стихией, форс-мажорными обстоятельствами;</li>
+              <li>повреждений, вызванных неправильными действиями потребителя в процессе эксплуатации трубопровода.</li>
+            </ul>
           </div>
         </div>
         <div class="section">
           <button class="transparent_btn section_btn h5">
-            <span>Как осуществляется оплата продукции?</span>
+            <span>Совместимы ли ваши трубы с фитингами других производителей?</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
               <g clip-path="url(#clip0_708_6372)">
                 <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"></path>
@@ -774,7 +827,9 @@
           </button>
           <div class="content" style="display: none;">
             <p class="text">
-              Оплата продукции Московского завода FDplast производится по безналичному расчету. Для оформления заявки достаточно направить перечень необходимой продукции Вашему персональному менеджеру или заполнить форму на сайте www.fdplast.ru, направить письмо по электронной почте на адрес zavod@fdplast.ru, позвонить по телефону 8 (495) 514-38-71. Счет на оплату выставляется после согласования всех условий заказа. Отгрузка товара выполняется после проведения оплаты.
+              Совместимость труб и фитингов разных производителей зависит от марки полипропилена, которая используется при производстве изделий. Трубы и фитинги Московского завода FDplast производятся из сырья марки Borealis (Финляндия).<br>
+              <br>
+              Если производители используют полипропилен одной марки, то, как правило, трубы и фитинги разных производителей совместимы и проблем с их монтажом не возникает. При монтаже систем водоснабжения и отопления рекомендуем использовать трубы и фитинги одного производителя.
             </p>
           </div>
         </div>
@@ -794,7 +849,7 @@
           </button>
           <div class="content" style="display: none;">
             <p class="text">
-              Продукция отгружается со складов, находящихся в пос. Красково Люберецкого района Московской области в г. Электростали.<br>
+              Продукция отгружается со складов, находящихся в пос. Красково Люберецкого района Московской области в г. Электростали.
               Доставка продукции осуществляется по желанию клиента до склада компании или терминала транспортной компании в пределах МКАД г. Москва. Возможен самовывоз продукции.
             </p>
             <a href="" class="link_with_arrow">
@@ -812,26 +867,6 @@
                 </defs>
               </svg>
             </a>
-          </div>
-        </div>
-        <div class="section">
-          <button class="transparent_btn section_btn h5">
-            <span>Как осуществляется возврат товара?</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-              <g clip-path="url(#clip0_708_6372)">
-                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"></path>
-              </g>
-              <defs>
-                <clipPath id="clip0_708_6372">
-                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"></rect>
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <div class="content" style="display: none;">
-            <p class="text">
-              Московский завод FDplast осуществляет обмен и возврат товара в соответствии с гражданским законодательством. Покупатель имеет право отказаться от приобретаемого товара в любое время до его получения и в течение двух недель после него. При необходимости может быть произведен бесплатный обмен в течение 14 дней.
-            </p>
           </div>
         </div>
       </div>
@@ -919,7 +954,20 @@
       </div>
       <div class="bottom_btns">
         <a href="" class="blue_btn main_text">Перейти в избранное</a>
-        <a href="" class="blue_btn __white main_text">Перейти в избранное</a>
+        <a href="" class="blue_btn __white main_text">
+          <span>Перейти в избранное</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_708_3323)">
+            <path d="M7.92062 13.7942L12.8998 8.815H0.824219V7.185H12.8998L8.2983 2.5835L9.43547 1.44629L15.9892 8L9.05781 14.9314L7.92062 13.7942Z" fill="#344E9B"/>
+            <path d="M7.92062 13.7942L12.8998 8.815H0.824219V7.185H12.8998L8.2983 2.5835L9.43547 1.44629L15.9892 8L9.05781 14.9314L7.92062 13.7942Z" fill="#344E9B"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_708_3323">
+            <rect width="15.98" height="15.98" fill="white" transform="translate(0.00976562 0.00976562)"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
