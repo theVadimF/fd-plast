@@ -3293,6 +3293,33 @@ header .popup_prompt.__location {
   flex-shrink: 0;
 }
 
+.legal_page .legal_heading {
+  color: var(--Black---text, #020002);
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.legal_page .link {
+  text-decoration: none;
+  color: var(--Black);
+}
+
+.legal_page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 221px;
+}
+
+.legal_page .legal_block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 @media (max-width: 1910px) {
   .index_advantages {
     gap: 0 100px;
@@ -4608,6 +4635,15 @@ header .popup_prompt.__location {
 
   .index_press.__component {
     margin-top: 0;
+  }
+
+  .legal_page .legal_heading {
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .legal_page {
+    margin-bottom: 112px;
   }
 }
 
