@@ -68,10 +68,6 @@ const dealers_inner = new Swiper('.dealers_slider', {
       // width: 'auto',
       noSwipingClass: 'swiper-slide',
       noSwiping: true,
-      navigation: {
-        nextEl: '.dealers_slider_wrap .pagination .next',
-        prevEl: '.dealers_slider_wrap .pagination .back',
-      },
     }
   },
   navigation: {
@@ -95,7 +91,7 @@ const dealers_inner = new Swiper('.dealers_slider', {
       }
       $('.dealers_slider_wrap .pagination .numbers button:first-child').addClass('__active');
     },
-    transitionEnd: function() {
+    transitionStart: function() {
       // let per_page = this.slidesPerViewDynamic();
       let per_page = 3;
       let page = Math.ceil(this.realIndex / this.slidesPerViewDynamic());
@@ -103,6 +99,14 @@ const dealers_inner = new Swiper('.dealers_slider', {
       $(`.dealers_slider_wrap .pagination .numbers .page_btn[data-pos="${(page) * per_page}"]`).addClass('__active');
     }
   }
+})
+
+$('.dealers_slider_wrap .pagination .next').click(function() {
+  dealers_inner.slideNext();
+})
+
+$('.dealers_slider_wrap .pagination .back').click(function() {
+  dealers_inner.slidePrev();
 })
 
 $('.dealers_slider_wrap .pagination .numbers .page_btn').click(function() {
@@ -419,7 +423,7 @@ const bought_together_slider = new Swiper ('.bought_together_slider', {
   slidesPerGroup: 1,
   spaceBetween: 20,
   navigation: {
-    nextEl: '.bought_together .nav.next',
+    nextEl:   '.bought_together .nav.next',
     prevEl: '.bought_together .nav.prev',
   },
   breakpoints: {
