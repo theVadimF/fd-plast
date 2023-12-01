@@ -405,6 +405,15 @@ $('.product_card_top .info .option .contents .option_selector').click(function()
   $(this).parent().slideUp();
 })
 
+$('.fav_items .item .option .option_btn').click(function() {
+  $(this).siblings('.contents_wrap').children('.contents').slideToggle('fast');
+})
+
+$('.fav_items .item .option .contents .option_selector').click(function() {
+  $(this).parent().parent().parent().find('.value').text($(this).text());
+  $(this).parent().slideUp();
+})
+
 const bought_together_slider = new Swiper ('.bought_together_slider', {
   slidesPerView: 1,
   slidesPerGroup: 1,
@@ -477,3 +486,31 @@ $('.fav_add_popup .close').click(function() {
 $('.bought_together .card .bottom .add_to_order').click(function() {
   $('.popup.__fav_add').fadeIn();
 })
+
+const recent_slider = new Swiper ('.recents .recent_slider', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.recents .nav.next',
+    prevEl: '.recents .nav.prev',
+  },
+  breakpoints: {
+    1500: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+    950: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    }
+  }
+})
+
+$('.fav_items .open_request_invoice').click(function() {
+  $('.popup.__invoice_form').fadeIn();
+})
+
+$('.popup.__invoice_form .form_back').click(function() {
+  $('.popup.__invoice_form').fadeOut();
+});
