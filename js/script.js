@@ -518,3 +518,50 @@ $('.fav_items .open_request_invoice').click(function() {
 $('.popup.__invoice_form .form_back').click(function() {
   $('.popup.__invoice_form').fadeOut();
 });
+
+$(document).ready(function() {
+  $('.city_list .city_search').on('keyup', function() {
+    $('.city_list .city_search').val($(this).val());
+    let value = $(this).val().toLowerCase();
+    $('.city_list .city_btn').filter(function() {
+      let text = $(this)
+      $(this).toggle(text.text().toLowerCase().indexOf(value) > -1);
+    })
+  })
+})
+
+$('header .location_picker').click(function() {
+  $('header .popup_prompt.__location').fadeToggle();
+})
+
+$('header .popup_prompt .city_picker .top_section .buttons .open_cities').click(function() {
+  $('header .popup_prompt .city_picker .city_list').removeClass('__hidden');
+})
+
+$('.open_header_catalog').click(function() {
+  $('header .products').fadeToggle();
+})
+
+$('header .popup_prompt .city_picker .topper .close_city_picker').click(function() {
+  $('header .popup_prompt.__location').fadeOut();
+})
+
+$('header .fav_items .top .close').click(function() {
+  $('.popup_prompt.__likes').fadeOut();
+})
+
+$('header .header_likes').click(function() {
+  $('.popup_prompt.__likes').fadeToggle();
+})
+
+$('.close_mobile_menu').click(function() {
+  $('.mobile_menu').fadeOut();
+})
+
+$('.mobile_menu_open').click(function() {
+  $('.mobile_menu').fadeIn();
+})
+
+$('.close_cookie').click(function() {
+  $('.cookies_popup').fadeOut();
+})
