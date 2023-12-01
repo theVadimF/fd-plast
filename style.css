@@ -983,6 +983,18 @@ header .products .contents .item .img_wrap .img {
   margin-top: 206px;
 }
 
+.index_press.__component {
+  margin-top: 98px;
+}
+
+.index_press.__component .slider_wrap .nav.next {
+  right: 10px;
+}
+
+.index_press.__component .slider_wrap .nav.prev {
+  left: 10px;
+}
+
 .index_press .top {
   display: flex;
   justify-content: space-between;
@@ -4592,6 +4604,10 @@ header .popup_prompt.__location {
   .cookies_popup {
     padding: 15px;
     gap: 10px;
+  }
+
+  .index_press.__component {
+    margin-top: 0;
   }
 }
 
