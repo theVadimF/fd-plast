@@ -3250,7 +3250,7 @@ header .popup_prompt.__location {
 .mobile_menu .contacts {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   margin-top: 20px;
 }
 

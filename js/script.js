@@ -565,3 +565,28 @@ $('.mobile_menu_open').click(function() {
 $('.close_cookie').click(function() {
   $('.cookies_popup').fadeOut();
 })
+
+$('.blocks.fade .block').each(function() {
+  console.log($(this).offset().top);
+})
+
+
+if ($('.blocks.fade .block').length) {
+  document.addEventListener('scroll', () => {
+    let window_bottom = window.scrollY + window.innerHeight;
+    const offset_val = 400
+    $('.blocks.fade .block').each(function() {
+      let offset = window_bottom - $(this).offset().top;
+      let opacity = 0;
+      if (offset < 0) {
+        return
+      }
+      if (offset > offset_val) {
+        opacity = 1;
+      } else {
+        opacity = offset / offset_val;
+      }
+      $(this).css('opacity', opacity);
+    })
+  })
+}
