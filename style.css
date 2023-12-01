@@ -301,6 +301,10 @@ header .bottom {
   background: rgba(3, 14, 41, 0.5);
 }
 
+header .bottom .mobile_menu_open {
+  display: none;
+}
+
 header .bottom .list {
   display: flex;
   align-items: center;
@@ -3371,6 +3375,28 @@ a.blue_btn {
   .product_card_top .info .heading {
     border: none;
   } */
+
+  header .top {
+    display: none;
+  }
+
+  header .bottom .list {
+    display: none;
+  }
+
+  header .bottom .mobile_menu_open {
+    display: block;
+  }
+
+  header .bottom .mobile_menu_open svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  header .display {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1090px) {
