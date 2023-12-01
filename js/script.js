@@ -10,24 +10,12 @@ $('.request_slides').each(function() {
   });
 })
 
-// TODO(vf) Make this work with multiple of these
-$('.requisites_file').change(function(e){
-  let fileName = e.target.files[0].name;
-  console.log('The file "' + fileName +  '" has been selected.');
-  $('.requisites_label').text("Реквизиты: " + fileName);
-});
-
-$('.order_file').change(function(e){
-  let fileName = e.target.files[0].name;
-  console.log('The file "' + fileName +  '" has been selected.');
-  $('.order_lable').text("Заявка: " + fileName);
-});
-
-$('.requisites_file_coop').change(function(e){
-  let fileName = e.target.files[0].name;
-  console.log('The file "' + fileName +  '" has been selected.');
-  $('.requisites_label_coop').text("Реквизиты: " + fileName);
-});
+$('.request_form .file').each(function() {
+  $(this).change(function(e) {
+    let fileName = e.target.files[0].name;
+    $('label[for="' + $(this).attr('id') + '"]').text($(this).data('doc') + ': ' + fileName);
+  })
+})
 
 let adv_slider_div = $('.index_advantages .slides');
 
@@ -566,11 +554,6 @@ $('.close_cookie').click(function() {
   $('.cookies_popup').fadeOut();
 })
 
-$('.blocks.fade .block').each(function() {
-  console.log($(this).offset().top);
-})
-
-
 if ($('.blocks.fade .block').length) {
   document.addEventListener('scroll', () => {
     let window_bottom = window.scrollY + window.innerHeight;
@@ -594,8 +577,8 @@ if ($('.blocks.fade .block').length) {
 $('.about_top .about_counters .counter .top_section .number:not(.__decimal)').each(function () {
   var $this = $(this);
   jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-    duration: 2000,
-    easing: 'swing',
+    duration: 1500,
+    // easing: 'swing',
     step: function () {
       $this.text(Math.ceil(this.Counter));
     }
@@ -605,8 +588,8 @@ $('.about_top .about_counters .counter .top_section .number:not(.__decimal)').ea
 $('.about_top .about_counters .counter .top_section .number.__decimal').each(function () {
   var $this = $(this);
   jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-    duration: 2000,
-    easing: 'swing',
+    duration: 1500,
+    // easing: 'swing',
     step: function () {
       $this.text(this.Counter.toFixed(1));
     }
