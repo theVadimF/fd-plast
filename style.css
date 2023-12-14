@@ -151,6 +151,10 @@ h5, .h5 {
   line-height: 22px;
 }
 
+.main_text.__blue {
+  color: var(--text---Blue);
+}
+
 .text {
   font-size: 16px;
   font-weight: 400;
@@ -3320,6 +3324,62 @@ header .popup_prompt.__location {
   gap: 18px;
 }
 
+.contact_page .contact_table .row {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 250px 1fr;
+  gap: 10px;
+}
+
+.contact_page .contact_table.__wide .row {
+  grid-template-columns: 300px 1fr;
+}
+
+.contact_page .contact_table .mini_grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.contact_page .link {
+  color: var(--Blue---text);
+  text-decoration: none;
+}
+
+.contact_page .right .link {
+  display: block;
+}
+
+.contact_page .link:hover {
+  text-decoration: underline;
+}
+
+.contact_page .contact_row {
+  display: grid;
+  gap: 20px;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 600px 1fr;
+}
+
+.contact_page .map_wrap {
+  height: 400px;
+  border-radius: 27px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contact_page > .contact_block {
+  margin-top: 50px;
+}
+
+.contact_page > .contact_block .main_text {
+  margin-top: 10px;
+}
+
+.contact_page {
+  margin-bottom: 100px;
+}
+
 @media (max-width: 1910px) {
   .index_advantages {
     gap: 0 100px;
@@ -3704,6 +3764,10 @@ header .popup_prompt.__location {
   .product_card_top .info .heading {
     border: none;
   } */
+
+  .contact_page .contact_row {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1090px) {
@@ -3765,6 +3829,16 @@ header .popup_prompt.__location {
 
   .index_press .top .main_text {
     max-width: 100%;
+  }
+
+  .contact_page .contact_row {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact_page .contact_table .row {
+    grid-template-columns: 300px 1fr;
   }
 }
 
@@ -4645,6 +4719,26 @@ header .popup_prompt.__location {
   .legal_page {
     margin-bottom: 112px;
   }
+
+  .bold {
+    font-weight: 700
+  }
+
+  .contact_page .contact_table .row, .contact_page .contact_table.__wide .row {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .catalog_top.__contact {
+    margin-bottom: 20px;
+  }
+
+  .contact_page .contact_row {
+    gap: 20px;
+  }
+
+  .contact_page > .contact_block {
+    margin-top: 20px;
+  }
 }
 
 
@@ -4660,6 +4754,14 @@ header .popup_prompt.__location {
 
   .section_heading_line {
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact_page .contact_table .row, .contact_page .contact_table.__wide .row {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
   }
 }
 
