@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="./js/lib/swiper/swiper-bundle.min.css">
 </head>
 <body>
-  <div class="cookies_popup">
-    <p class="main_text">Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</p>
-    <button class="blue_btn __white main_text close_cookie">Понятно, закрыть</button>
+  <div class="outer-wrap">
+    <div class="cookies_popup">
+      <p class="main_text">Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.</p>
+      <button class="blue_btn __white main_text close_cookie">Понятно, закрыть</button>
+    </div>
   </div>
 
   <div class="mobile_menu" style="display: none;">
@@ -148,7 +150,7 @@
             </a>
           </div>
           <div class="right">
-            <a href="#" class="text link">
+            <button href="#" class="text link transparent_btn open_request">
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
                 <g clip-path="url(#clip0_708_7720)">
                   <path d="M2.15112 5.71859L7.06541 0.797607H16.075C16.3043 0.797607 16.4981 0.876889 16.6565 1.03545C16.8147 1.19402 16.894 1.38812 16.894 1.61777V16.3807C16.894 16.6104 16.8147 16.8044 16.6565 16.963C16.4981 17.1216 16.3043 17.2009 16.075 17.2009H2.97017C2.74084 17.2009 2.547 17.1189 2.38865 16.9548C2.2303 16.7908 2.15112 16.5995 2.15112 16.3807V5.71859ZM7.88446 2.43794V6.53875H3.78921V15.5606H15.2559V2.43794H7.88446Z" fill="white"/>
@@ -162,7 +164,7 @@
                 </defs>
               </svg>
               <span>Запросить индивидуальное предложение</span>
-            </a>
+            </button>
             <div class="search_wrap">
               <input type="text" class="search text" placeholder="Поиск">
               <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -449,7 +451,7 @@
           </button>
         </div>
       </div>
-      <div class="products" style="display: none;">
+      <div class="products">
         <div class="header-wrap contents">
           <div class="row">
             <h5 class="heading">Водоснабжение</h5>
@@ -657,6 +659,50 @@
                   Пластик для 3D принтера
                 </p>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="request_popup">
+        <div class="outer-wrap">
+          <div class="request_box">
+            <div class="request_form content-wrap">
+              <h3>Запросить индивидуальное<br>предложение</h3>
+              <div class="right">
+                <div class="form_grid">
+                  <input type="text" class="input main_text" placeholder="Ваше имя">
+                  <input type="text" class="input main_text" placeholder="Телефон">
+                  <input type="text" class="input main_text" placeholder="E-mail">
+                  <input type="text" class="input main_text" placeholder="Комментарий">
+                </div>
+                <label for="requisites_popup" class="file_lable main_text requisites_label">Реквизиты (загрузите реквизиты в формате DOC, PDF, Excel)</label>
+                <input type="file" data-doc="Реквизиты" id="requisites_popup" class="file requisites_file">
+                <label for="order_popup" class="file_lable main_text order_lable">Заявка (загрузите Вашу заявку в формате DOC, PDF, Excel)</label>
+                <input type="file" data-doc="Заявка" id="order_popup" class="file order_file">
+                <div class="checkbox_wrap">
+                  <input type="checkbox" name="legal1_popup" id="legal1_popup" class="input">
+                  <label for="legal1_popup" class="box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g clip-path="url(#clip0_708_8249)">
+                      <path class="check" d="M4 10.5L9.5 15L16.5 6" stroke="white"/>
+                      <rect x="0.5" y="0.5" width="19" height="19" stroke="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_708_8249">
+                      <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </label>
+                  <label for="legal1_popup" class="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</label>
+                </div>
+                <button class="submit main_text">Отправить</button>
+              </div>
+              <button class="form_back transparent_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
