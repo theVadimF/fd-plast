@@ -691,3 +691,29 @@ $('header .open_request').click(function() {
 $('header .request_popup .form_back').click(function() {
   $('header .request_popup').removeClass('__open')
 })
+
+new Swiper('.big_slider', {
+  pagination: {
+    el: '.big_slider .swiper-pagination',
+    clickable: true,
+  },
+  on: {
+    afterInit: function() {
+      let video = $(this.slidesEl).find('.swiper-slide-active').children('video');
+      if (video.length > 0) {
+        video[0].play();
+      }
+    },
+    transitionEnd: function() {
+      let video = $(this.slidesEl).find('.swiper-slide-active').children('video');
+      if (video.length > 0) {
+        video[0].play();
+      } else {
+        $(this.slidesEl).find('video').each(function() {
+          this.pause();
+          this.currentTime = 0;
+        })
+      }
+    },
+  }
+});
