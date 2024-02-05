@@ -180,11 +180,31 @@ const about_boxes = new Swiper('.about_boxes .main_swiper', {
   noSwipingClass: 'swiper-slide',
 });
 
+const faq_slides = new Swiper('.about_faq .faq_slides', {
+  effect: 'fade',
+  autoHeight: true,
+  noSwiping: true,
+  noSwipingClass: 'swiper-slide',
+});
+
+$('.about_faq .right .faq_categories .faq_category').click(function() {
+  faq_slides.slideTo($(this).data('pos'));
+  $('.about_faq .section .content').slideUp({
+    step: function() {
+      about_boxes.update();
+      faq_slides.update();
+    }
+  })
+  $('.about_faq .right .faq_categories .faq_category').removeClass('__active');
+  $(this).addClass('__active');
+})
+
 $('.about_faq .section .section_btn').click(function() {
   if ($(this).parents('.about_boxes').length) {
     $(this).siblings('.content').slideToggle({
       step: function() {
         about_boxes.update();
+        faq_slides.update();
       }
     });
   } else {
@@ -316,8 +336,12 @@ $('.resume_btn').click(function() {
   $('.popup.__job_form').fadeIn();
 })
 
-$('.job_form .form_back').click(function() {
-  $('.popup.__job_form').fadeOut();
+$('.popup .form_back').click(function() {
+  $(this).parents('.popup').fadeOut();
+})
+
+$('.open_info_form').click(function() {
+  $('.popup.__info_form').fadeIn();
 })
 
 const why_us_slider = new Swiper('.about_why_us .swiper', {
