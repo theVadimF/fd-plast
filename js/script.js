@@ -744,3 +744,35 @@ new Swiper('.big_slider', {
     },
   }
 });
+
+const big_gallery = new Swiper('.big_gallery_slider', {
+  navigation: {
+    nextEl: '.gallery_popup .gallery .gallery_nav.__next',
+    prevEl: '.gallery_popup .gallery .gallery_nav.__prev',
+  },
+  autoHeight: true,
+  // height: '100%',
+  breakpoints: {
+    800: {
+      autoHeight: true,
+    }
+  },
+})
+
+$('.gallery_popup .gallery .big_gallery_thumbs .big_thumb_btn').click(function() {
+  big_gallery.slideTo($(this).data('pos'));
+})
+
+$('.gallery_popup .shade').click(function() {
+  $('.gallery_popup').removeClass('__shown');
+})
+
+$('.gallery_popup .close_gallery').click(function() {
+  $('.gallery_popup').removeClass('__shown');
+})
+
+$('.product_card_top .gallery .gallery_img').click(function() {
+  // console.log(gallery_slider.activeIndex);
+  big_gallery.slideTo(gallery_slider.activeIndex, 0);
+  $('.gallery_popup').addClass('__shown');
+})
