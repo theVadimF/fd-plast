@@ -110,6 +110,59 @@
       </button>
     </div>
   </div>
+  <div class="gallery_popup">
+    <div class="shade"></div>
+    <div class="gallery content-wrap">
+      <button class="transparent_btn close_gallery">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="transparent_btn gallery_nav __prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <g clip-path="url(#clip0_1894_11240)">
+            <path d="M10.6411 17.3404L4.0744 11.1664H20V9.14529H4.07441L10.143 3.43963L8.6432 2.02954L0 10.1559L9.14129 18.7505L10.6411 17.3404Z" fill="#003466"/>
+            <path d="M10.6411 17.3404L4.0744 11.1664H20V9.14529H4.07441L10.143 3.43963L8.6432 2.02954L0 10.1559L9.14129 18.7505L10.6411 17.3404Z" fill="#003466"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_1894_11240">
+              <rect width="20" height="20" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <button class="transparent_btn gallery_nav __next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M9.90114 17.2518L16.1329 11.02H1.01953V8.97997H16.1329L10.3738 3.2209L11.7971 1.79761L19.9995 10L11.3244 18.6751L9.90114 17.2518Z" fill="#003466"/>
+          <path d="M9.90114 17.2518L16.1329 11.02H1.01953V8.97997H16.1329L10.3738 3.2209L11.7971 1.79761L19.9995 10L11.3244 18.6751L9.90114 17.2518Z" fill="#003466"/>
+        </svg>
+      </button>
+      <div class="big_gallery_slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/2layer.png" alt="" class="big_gallery_img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/double_tube.png" alt="" class="big_gallery_img">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/tube_flat.png" alt="" class="big_gallery_img">
+          </div>
+        </div>
+      </div>
+      <div class="big_gallery_thumbs">
+        <button class="transparent_btn big_thumb_btn" data-pos="0">
+          <img src="./img/2layer.png" alt="" class="big_gallery_thumb">
+        </button>
+        <button class="transparent_btn big_thumb_btn" data-pos="1">
+          <img src="./img/double_tube.png" alt="" class="big_gallery_thumb">
+        </button>
+        <button class="transparent_btn big_thumb_btn" data-pos="2">
+          <img src="./img/tube_flat.png" alt="" class="big_gallery_thumb">
+        </button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="top">
       <div class="header-wrap display">
@@ -230,7 +283,7 @@
     </div>
   </div>
 
-  <div class="outer_wrap">
+  <div class="outer-wrap">
     <div class="content-wrap product_card_top">
       <div class="gallery">
         <div class="main_gallery swiper">

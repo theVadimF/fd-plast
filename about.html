@@ -49,6 +49,43 @@
       </div>
     </div>
   </div>
+  <div class="popup __info_form" style="display: none;">
+    <div class="job_form request_box">
+      <div class="request_form content-wrap">
+        <h3>Не нашли нужную информацию на сайте?<br>Оставьте свои данные, мы вам перезвоним.</h3>
+        <div class="right">
+          <div class="form_grid">
+            <input type="text" class="input main_text" placeholder="Ваше имя">
+            <input type="text" class="input main_text" placeholder="Телефон">
+          </div>
+          <input type="text" class="input __wide main_text" placeholder="Комментарий">
+          <div class="checkbox_wrap">
+            <input type="checkbox" name="legal_info" id="legal_info" class="input">
+            <label for="legal_info" class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_708_8249)">
+                <path class="check" d="M4 10.5L9.5 15L16.5 6" stroke="white"></path>
+                <rect x="0.5" y="0.5" width="19" height="19" stroke="white"></rect>
+                </g>
+                <defs>
+                <clipPath id="clip0_708_8249">
+                <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"></rect>
+                </clipPath>
+                </defs>
+              </svg>
+            </label>
+            <label for="legal_info" class="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</label>
+          </div>
+          <button class="submit main_text">Отправить</button>
+        </div>
+        <button class="form_back transparent_btn" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ce8b8ed7e8f6e296" aria-disabled="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="top">
       <div class="header-wrap display">
@@ -535,167 +572,313 @@
           <div class="content-wrap about_faq">
             <div class="left">
               <h4 class="title">Часто задаваемые вопросы</h4>
-              <p class="text">Вся продукция FD сертифицирована и производится в строгом соответствии с ГОСТ и международными стандартами. Каждая партия продукции проходит испытания в собственной лаборатории по контролю качества.</p>
+              <p class="text">
+                Московский завод FDplast производит широкий ассортимент продукции для устройства систем холодного горячего водоснабжения и отопления, наружной канализации.<br>
+                Вся продукция FD сертифицирована и производится в строгом соответствии с ГОСТ и международными стандартами.<br>
+                Каждая партия продукции проходит испытания в собственной лаборатории по контролю качества.<br>
+              </p>
+              <button class="blue_btn main_text open_info_form">Остались вопросы, свяжитесь с нами</button>
             </div>
-            <div class="faq_sections">
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>В чем заключаются преимущества работы с Заводом?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">Преимущества работы с Московским заводом FDplast:</p>
-                  <ul class="main_list text">
-                    <li>Гибкая система скидок и прозрачная ценовая политика.</li>
-                    <li>Дилерам выдается официальный сертификат дилера, подтверждающий статус компании.</li>
-                    <li>Возможность закрепления за дилером территории присутствия компании (область, регион, город).</li>
-                    <li>Контактная информация о дилере размещается на сайте fdplast.ru, перенаправляются входящие клиенты.</li>
-                    <li>Система резервирования тендеров, проектов, объектов.</li>
-                    <li>Предоставляется полный комплект технической документации (тех. паспорта, руководства, сертификаты, презентации и т.д.), необходимой для продажи и продвижения труб и фитингов FD в регионе.</li>
-                    <li>Предоставляется маркетинговая поддержка: печатная продукция (каталоги, листовки, брошюры), демо боксы, баннеры для размещения в точках продаж и на сайте компании, сувенирная продукция.</li>
-                    <li>Отсрочка платежа при постоянной работе.</li>
-                    <li>Предоставление компании-дилеру персонального менеджера.</li>
-                  </ul>
-                </div>
+            <div class="right">
+              <div class="faq_categories">
+                <button
+                  class="transparent_btn main_text faq_category __active"
+                  data-pos="0">Общие вопросы</button>
+                <button
+                  class="transparent_btn main_text faq_category"
+                  data-pos="1">Заказ, оплата и возврат</button>
+                <button
+                  class="transparent_btn main_text faq_category"
+                  data-pos="2">Вопросы о доставке</button>
               </div>
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>Является ли продукция Завода FDplast сертифицированной?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">Вся продукция компании сертифицирована и производится в строгом соответствии с ГОСТ.</p>
-                  <a href="" class="link_with_arrow">
-                    <span>Сертификаты соответствия</span>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="42" height="42" rx="21" fill="#003466"/>
-                      <g clip-path="url(#clip0_840_1077)">
-                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_840_1077">
-                      <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                      </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>Как стать дилером завода?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">
-                    Московский завод FDplast приглашает к сотрудничеству все заинтересованные лица, компании, работающие как в РФ, странах ближнего и дальнего зарубежья.<br>
-                    Если Вы заинтересованы стать дилером Завода обращайтесь по телефону (495) 514-38-71 и направляйте информацию о Вашей компании на адрес электронной почты: zavod@fdplast.ru.
-                  </p>
-                  </a>
-                </div>
-              </div>
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>Как осуществляется оплата продукции?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">
-                    Оплата продукции Московского завода FDplast производится по безналичному расчету. Для оформления заявки достаточно направить перечень необходимой продукции Вашему персональному менеджеру или заполнить форму на сайте www.fdplast.ru, направить письмо по электронной почте на адрес zavod@fdplast.ru, позвонить по телефону 8 (495) 514-38-71. Счет на оплату выставляется после согласования всех условий заказа. Отгрузка товара выполняется после проведения оплаты.
-                  </p>
-                </div>
-              </div>
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>Каким образом производится отгрузка и доставка продукции?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">
-                    Продукция отгружается со складов, находящихся в пос. Красково Люберецкого района Московской области в г. Электростали.<br>
-                    Доставка продукции осуществляется по желанию клиента до склада компании или терминала транспортной компании в пределах МКАД г. Москва. Возможен самовывоз продукции.
-                  </p>
-                  <a href="" class="link_with_arrow">
-                    <span>Адреса складов завода</span>
-                    <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="42" height="42" rx="21" fill="#003466"/>
-                      <g clip-path="url(#clip0_840_1077)">
-                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                      <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_840_1077">
-                      <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                      </clipPath>
-                      </defs>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="section">
-                <button class="transparent_btn section_btn h5">
-                  <span>Как осуществляется возврат товара?</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
-                    <g clip-path="url(#clip0_708_6372)">
-                      <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_708_6372">
-                        <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div class="content" style="display: none;">
-                  <p class="text">
-                    Московский завод FDplast осуществляет обмен и возврат товара в соответствии с гражданским законодательством. Покупатель имеет право отказаться от приобретаемого товара в любое время до его получения и в течение двух недель после него. При необходимости может быть произведен бесплатный обмен в течение 14 дней.
-                  </p>
+              <div class="faq_outer">
+                <div class="swiper faq_slides">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="faq_sections">
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Каковы преимущества продукции Московского завода FDplast?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <ul class="main_list text">
+                              <li>Московский завод FDplast производит широкий ассортимент продукции для устройства систем холодного горячего водоснабжения и отопления, наружной канализации.</li>
+                              <li>Диаметральный ряд производимых полипропиленовых труб и фитингов составляет от 20 до 160 мм.</li>
+                              <li>Диаметральный ряд гофрированных труб, фитингов - от 110D до 2400D, с кольцевой жесткостью от SN 6-7 до SN 16.</li>
+                              <li>
+                                В производстве продукции для систем водоснабжения и отопления FD используется сырье Borealis RA130E (Финляндия) полипропилен «Рандом сополимер» (тип 3). 
+                                Для производства гофрированных труб используется качественное сырье ведущих мировых производителей Borealis, ГАЗПРОМ, Казаньоргсинтез.
+                              </li>
+                              <li>Завод постоянно расширяет ассортимент производимой продукции. Новинками Завода являются спиральновитая труба FD SVT, сварные колодцы FD SVT: канализационные, водопроводные, кабельные. В 2022 году Завод приступает к производству компрессионных фитингов.</li>
+                              <li>Вся продукция FD сертифицирована и производится в строгом соответствии с ГОСТ и международными стандартами.</li>
+                              <li>Каждая партия продукции проходит испытания в собственной лаборатории по контролю качества. Высокое качество продукции подтверждается дипломами и наградами, а также отзывами клиентов Завода.</li>
+                              <li>Долговечность систем наружной канализации FD, а также систем холодного, горячего водоснабжения и водоотведения FD рассчитана на срок эксплуатации более 50 лет.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>В чем заключаются преимущества работы с Заводом?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">Преимущества работы с Московским заводом FDplast:</p>
+                            <ul class="main_list text">
+                              <li>Гибкая система скидок и прозрачная ценовая политика.</li>
+                              <li>Дилерам выдается официальный сертификат дилера, подтверждающий статус компании.</li>
+                              <li>Возможность закрепления за дилером территории присутствия компании (область, регион, город).</li>
+                              <li>Контактная информация о дилере размещается на сайте fdplast.ru, перенаправляются входящие клиенты.</li>
+                              <li>Система резервирования тендеров, проектов, объектов.</li>
+                              <li>Предоставляется полный комплект технической документации (тех. паспорта, руководства, сертификаты, презентации и т.д.), необходимой для продажи и продвижения труб и фитингов FD в регионе.</li>
+                              <li>Предоставляется маркетинговая поддержка: печатная продукция (каталоги, листовки, брошюры), демо боксы, баннеры для размещения в точках продаж и на сайте компании, сувенирная продукция.</li>
+                              <li>Отсрочка платежа при постоянной работе.</li>
+                              <li>Предоставление компании-дилеру персонального менеджера.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Как стать дилером завода?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Московский завод FDplast приглашает к сотрудничеству все заинтересованные лица, компании, работающие как в РФ, странах ближнего и дальнего зарубежья.<br>
+                              Если Вы заинтересованы стать дилером Завода обращайтесь по телефону (495) 514-38-71 и направляйте информацию о Вашей компании на адрес электронной почты: zavod@fdplast.ru.
+                            </p>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Является ли продукция Завода FDplast сертифицированной?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">Вся продукция компании сертифицирована и производится в строгом соответствии с ГОСТ.</p>
+                            <a href="" class="link_with_arrow">
+                              <span>Сертификаты соответствия</span>
+                              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="42" height="42" rx="21" fill="#003466"/>
+                                <g clip-path="url(#clip0_840_1077)">
+                                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_840_1077">
+                                <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Какие действуют гарантийные обязательства?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Вся продукция Московского завода FDplast является сертифицированной. 
+                              Качество продукции соответствует государственным стандартам и единым санитарно-эпидемиологическим 
+                              требованиям. Московский завод FDplast имеет собственную лабораторию по контролю качества продукции. 
+                              Для анализа физико-механических показателей изделий используется самое современное оборудование. 
+                              Проверка качества полипропиленовых труб и фитингов FD осуществляется на всех этапах производства 
+                              продукции, при отгрузке на склад, при отгрузке клиенту.<br>
+                              <br>
+                              Гарантия не распространяется на дефекты, возникшие в случаях:
+                            </p>
+                            <ul class="main_list text">
+                              <li>нарушения условий хранения, проектирования, монтажа, испытаний, эксплуатации;</li>
+                              <li>ненадлежащей транспортировки и погрузочно-разгрузочных работ;</li>
+                              <li>наличия следов воздействия веществ, агрессивных к материалам изделия;</li>
+                              <li>наличия следов механического, термического воздействия;</li>
+                              <li>наличия повреждений, вызванных пожаром, стихией, форс-мажорными обстоятельствами;</li>
+                              <li>повреждений, вызванных неправильными действиями потребителя в процессе эксплуатации трубопровода.</li>
+                              <li>Предоставляется маркетинговая поддержка: печатная продукция (каталоги, листовки, брошюры), демо боксы, баннеры для размещения в точках продаж и на сайте компании, сувенирная продукция.</li>
+                            </ul>
+                            <br>
+                            <p class="text">По вопросам качества продукции необходимо обращаться к Вашему персональному менеджеру или по телефону <a class="inline_link" href="tel:+7 (495) 640-88-38">+7 (495) 640-88-38</a>. Все проблемы будут урегулированы в кратчайшие сроки.</p>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Совместимы ли ваши трубы с фитингами других производителей?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Совместимость труб и фитингов разных производителей зависит от марки полипропилена, которая используется при производстве изделий. Трубы и фитинги Московского завода FDplast производятся из сырья марки Borealis (Финляндия).<br>
+                              <br>
+                              Если производители используют полипропилен одной марки, то, как правило, трубы и фитинги разных производителей совместимы и проблем с их монтажом не возникает. При монтаже систем водоснабжения и отопления рекомендуем использовать трубы и фитинги одного производителя.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="faq_sections">
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Как осуществляется оплата продукции?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Оплата продукции Московского завода FDplast производится по безналичному расчету. Для оформления заявки достаточно направить перечень необходимой продукции Вашему персональному менеджеру или заполнить форму на сайте <a href="www.fdplast.ru" class="inline_link">www.fdplast.ru</a>, направить письмо по электронной почте на адрес <a class="inline_link" href="mailto:zavod@fdplast.ru">zavod@fdplast.ru</a>, позвонить по телефону<br>
+                              <a class="inline_link" href="tel:+7 (495) 640-88-38">+7 (495) 640-88-38</a>. Счет на оплату выставляется после согласования всех условий заказа. Отгрузка товара выполняется после проведения оплаты.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Как заказать сварной колодец с шахтой из спиральновитой трубы FD SVT?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Для заказа колодца FD SVT Вам необходимо заполнить форму заказа колодца и направить ее по электронной почте на адрес Завода: <a href="mailto:zavod@fdplast.ru">zavod@fdplast.ru</a>, позвонить по телефону <a href="tel:+7 (495) 640-88-38">+7 (495) 640-88-38</a>.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Как осуществляется возврат товара?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Московский завод FDplast осуществляет обмен и возврат товара в соответствии с гражданским законодательством. Покупатель имеет право отказаться от приобретаемого товара в любое время до его получения и в течение двух недель после него. При необходимости может быть произведен бесплатный обмен в течение 14 дней.
+                            </p>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="faq_sections">
+                        <div class="section">
+                          <button class="transparent_btn section_btn h5">
+                            <span>Каким образом производится отгрузка и доставка продукции?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                              <g clip-path="url(#clip0_708_6372)">
+                                <path d="M14.8575 5.10051L14.8737 14.9838M14.8737 14.9838L14.8575 24.8995M14.8737 14.9838L4.95801 15M14.8737 14.9838L24.757 15" stroke="#020002" stroke-width="1.5" stroke-linecap="round"/>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_708_6372">
+                                  <rect width="20" height="20" fill="white" transform="translate(0.71582 15) rotate(-45)"/>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                          <div class="content" style="display: none;">
+                            <p class="text">
+                              Продукция отгружается со складов, находящихся в пос. Красково Люберецкого района Московской области в г. Электростали.<br>
+                              Доставка продукции осуществляется по желанию клиента до склада компании или терминала транспортной компании в пределах МКАД г. Москва. Возможен самовывоз продукции.
+                            </p>
+                            <a href="" class="link_with_arrow">
+                              <span>Адреса складов завода</span>
+                              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="42" height="42" rx="21" fill="#003466"/>
+                                <g clip-path="url(#clip0_840_1077)">
+                                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                                <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_840_1077">
+                                <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
+                                </clipPath>
+                                </defs>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1064,73 +1247,103 @@
     <img src="./img/placeholder.jpg" alt="" class="grid_img __6">
   </div>
   <div class="outer_wrap">
-    <div class="docs_block content-wrap">
+    <div class="about_docs_block content-wrap">
       <div class="swiper docs_slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="block">
               <img src="./img/catalog.png" alt="" class="img __catalog">
-              <h5 class="title">Технический каталог</h5>
-              <p class="text">Системы наружной канализации</p>
-              <button class="choose main_text" data-type="catalog">
-                <span>Скачать</span>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                  <g clip-path="url(#clip0_708_7349)">
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_708_7349">
-                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                  </clipPath>
-                  </defs>
-                </svg>
-              </button>
+              <div class="bottom">
+                <h5 class="title">Технический каталог</h5>
+                <p class="text">Системы горячего и холодного водоснабжения, отопления, 2023</p>
+                <button class="choose main_text" data-type="catalog">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7349)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7349">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="block">
               <img src="./img/catalog.png" alt="" class="img __catalog">
-              <h5 class="title">Технический каталог</h5>
-              <p class="text">Системы наружной канализации</p>
-              <button class="choose main_text" data-type="catalog">
-                <span>Скачать</span>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                  <g clip-path="url(#clip0_708_7349)">
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_708_7349">
-                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                  </clipPath>
-                  </defs>
-                </svg>
-              </button>
+              <div class="bottom">
+                <h5 class="title">Каталог справочный</h5>
+                <p class="text">Системы горячего и холодного водоснабжения, отопления, 2023</p>
+                <button class="choose main_text" data-type="catalog">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7349)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7349">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="block">
               <img src="./img/catalog.png" alt="" class="img __catalog">
-              <h5 class="title">Технический каталог</h5>
-              <p class="text">Системы наружной канализации</p>
-              <button class="choose main_text" data-type="catalog">
-                <span>Скачать</span>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="42" height="42" rx="21" fill="#003466"></rect>
-                  <g clip-path="url(#clip0_708_7349)">
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_708_7349">
-                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
-                  </clipPath>
-                  </defs>
-                </svg>
-              </button>
+              <div class="bottom">
+                <h5 class="title">Технический каталог</h5>
+                <p class="text">Системы наружной канализации, 2023</p>
+                <button class="choose main_text" data-type="catalog">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7349)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7349">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="block">
+              <img src="./img/catalog.png" alt="" class="img __catalog">
+              <div class="bottom">
+                <h5 class="title">Каталог справочный</h5>
+                <p class="text">Системы наружной канализации, 2023</p>
+                <button class="choose main_text" data-type="catalog">
+                  <span>Скачать</span>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="#003466"></rect>
+                    <g clip-path="url(#clip0_708_7349)">
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_708_7349">
+                    <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
