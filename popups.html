@@ -183,7 +183,7 @@
                 <path d="M2.04244 0.0130825C1.88808 0.040266 1.69779 0.115023 1.55507 0.202402C1.44342 0.272305 1.26478 0.448031 1.18905 0.563565C1.12012 0.667449 1.06478 0.79172 1.02983 0.916963L1.00361 1.01211L1.0007 8.14315C0.998759 13.3626 1.0007 15.2946 1.00847 15.3509C1.06284 15.7354 1.33371 16.0897 1.70167 16.2587C1.91817 16.3587 2.07837 16.3917 2.30846 16.3829C2.53953 16.3742 2.72108 16.3227 2.91137 16.2091C3.03856 16.1334 3.10361 16.0771 3.48904 15.7062C6.43855 12.8684 7.92301 11.4441 7.92981 11.4441C7.93369 11.4441 8.9832 12.4499 10.2628 13.68C11.5414 14.9092 12.6308 15.9558 12.6832 16.0053C12.8764 16.1888 13.0706 16.2926 13.3201 16.349C13.456 16.379 13.7531 16.381 13.8822 16.3528C14.0346 16.3198 14.2016 16.248 14.3414 16.1557C14.4327 16.0956 14.5939 15.9344 14.6579 15.8392C14.7589 15.6888 14.8288 15.5101 14.8521 15.3431C14.8667 15.2373 14.8667 1.14609 14.8521 1.04026C14.8045 0.698517 14.5919 0.380072 14.2851 0.191721C14.1919 0.134441 14.024 0.0635662 13.9016 0.0305576L13.7997 0.00240135L7.9599 0.000459671C2.95118 -0.000511169 2.10943 0.00143051 2.04244 0.0130825ZM13.4744 8.11111V14.8373L13.3997 14.7635C13.2939 14.6606 9.08805 10.6257 8.45602 10.0218C8.17155 9.74897 7.93466 9.52664 7.92981 9.52664C7.91913 9.52664 7.51719 9.91111 4.76671 12.5509C3.46186 13.8033 2.39002 14.8295 2.38613 14.8305C2.38128 14.8325 2.3774 11.8548 2.3774 8.11014V1.38589H7.92592H13.4744V8.11111Z" fill="white"/>
               </svg>
               <div class="counter">
-                <p class="text">2</p>
+                <p class="text">1</p>
               </div>
             </>
           </div>
@@ -246,6 +246,16 @@
             <div class="content-wrap fav_items">
               <div class="top">
                 <h3 class="title">Ранее выбранные товары для расчета цены</h3>
+                <div class="hint_wrap">
+                  <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"/>
+                    <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="13" cy="6" r="1" fill="#003466"/>
+                  </svg>
+                  <div class="hint_box">
+                    <span class="hint_text">PLACEHOLDER</span>
+                  </div>
+                </div>
                 <button class="transparent_btn close">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"></path>
@@ -255,82 +265,73 @@
               <div class="items">
                 <div class="item">
                   <img src="./img/2layer.png" alt="" class="img">
-                  <p class="main_text name">Труба гофрированная с раструбом ПЭ черный</p>
+                  <div class="item_top">
+                    <p class="main_text name bold">Труба гофрированная с раструбом ПЭ черный</p>
+                    <div class="right">
+                      <p class="main_text bold">Длина, метр</p>
+                      <div class="spinbox">
+                        <button class="increment __down">
+                          <svg class="icon" width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H16" stroke="#003466" stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                        <input type="text" class="value_input" value="1" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')">
+                        <button class="increment __up">
+                          <svg class="icon" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 16.5L8.5 1.5" stroke="#003466" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M1 9H16" stroke="#003466" stroke-width="2" stroke-linecap="round"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                   <div class="options">
-                    <div class="option">
-                      <button class="option_btn">
+                    <div class="select_wrap">
+                      <button class="current">
                         <div class="left">
                           <p class="topper">Кольцевая жесткость:</p>
-                          <p class="text value">SN8-9</p>
+                          <p class="text value">SN6-7</p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                       </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">SN6-7</button>
-                          <button class="option_selector transparent_btn text">SN8-9</button>
+                      <div class="options_wrap">
+                        <div class="options"> 
+                          <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked="">
+                          <label for="item1_1">SN6-7</label>
+                          <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
+                          <label for="item1_2">SN8</label>
+                          <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
+                          <label for="item1_3">SN9</label>
+                          <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
+                          <label for="item1_4">SN10</label>
                         </div>
                       </div>
                     </div>
-                    <div class="option">
-                      <button class="option_btn">
+                    <div class="select_wrap">
+                      <button class="current">
                         <div class="left">
-                          <p class="topper">Диаметр:</p>
-                          <p class="text value">Диаметр 190 мм</p>
+                          <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
+                          <p class="text value">230 / 200</p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                           <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                       </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">Диаметр 110 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 133 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 160 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 190 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 200 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 230 мм</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="option">
-                      <button class="option_btn">
-                        <div class="left">
-                          <p class="topper">Количество /шт:</p>
-                          <p class="text value">1 шт</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                          <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">1 шт</button>
-                          <button class="option_selector transparent_btn text">2 шт</button>
-                          <button class="option_selector transparent_btn text">3 шт</button>
-                          <button class="option_selector transparent_btn text">4 шт</button>
-                          <button class="option_selector transparent_btn text">5 шт</button>
-                          <button class="option_selector transparent_btn text">6 шт</button>
-                          <button class="option_selector transparent_btn text">7 шт</button>
-                          <button class="option_selector transparent_btn text">8 шт</button>
-                          <button class="option_selector transparent_btn text">9 шт</button>
-                          <button class="option_selector transparent_btn text">11 шт</button>
-                          <button class="option_selector transparent_btn text">12 шт</button>
-                          <button class="option_selector transparent_btn text">13 шт</button>
-                          <button class="option_selector transparent_btn text">14 шт</button>
-                          <button class="option_selector transparent_btn text">15 шт</button>
-                          <button class="option_selector transparent_btn text">16 шт</button>
-                          <button class="option_selector transparent_btn text">17 шт</button>
-                          <button class="option_selector transparent_btn text">18 шт</button>
-                          <button class="option_selector transparent_btn text">19 шт</button>
-                          <button class="option_selector transparent_btn text">20 шт</button>
-                          <button class="option_selector transparent_btn text">21 шт</button>
-                          <button class="option_selector transparent_btn text">22 шт</button>
-                          <button class="option_selector transparent_btn text">23 шт</button>
-                          <button class="option_selector transparent_btn text">24 шт</button>
-                          <button class="option_selector transparent_btn text">25 шт</button>
+                      <div class="options_wrap">
+                        <div class="options"> 
+                          <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked="">
+                          <label for="item11_1">230 / 200</label>
+                          <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
+                          <label for="item11_2">
+                            <span>250 / 216</span>
+                            <div class="tag __red">Распродажа</div>
+                          </label>
+                          <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
+                          <label for="item11_3"> 290 / 250</label>
+                          <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
+                          <label for="item11_4">315 / 271</label>
                         </div>
                       </div>
                     </div>
@@ -341,96 +342,8 @@
                     </svg>
                   </button>
                 </div>
-                <div class="item">
-                  <img src="./img/2layer.png" alt="" class="img">
-                  <p class="main_text name">Труба гофрированная с раструбом ПЭ черный</p>
-                  <div class="options">
-                    <div class="option">
-                      <button class="option_btn">
-                        <div class="left">
-                          <p class="topper">Кольцевая жесткость:</p>
-                          <p class="text value">SN8-9</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                          <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">SN6-7</button>
-                          <button class="option_selector transparent_btn text">SN8-9</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="option">
-                      <button class="option_btn">
-                        <div class="left">
-                          <p class="topper">Диаметр:</p>
-                          <p class="text value">Диаметр 190 мм</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                          <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">Диаметр 110 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 133 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 160 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 190 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 200 мм</button>
-                          <button class="option_selector transparent_btn text">Диаметр 230 мм</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="option">
-                      <button class="option_btn">
-                        <div class="left">
-                          <p class="topper">Количество /шт:</p>
-                          <p class="text value">1 шт</p>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                          <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </button>
-                      <div class="contents_wrap">
-                        <div class="contents" style="display: none;">
-                          <button class="option_selector transparent_btn text">1 шт</button>
-                          <button class="option_selector transparent_btn text">2 шт</button>
-                          <button class="option_selector transparent_btn text">3 шт</button>
-                          <button class="option_selector transparent_btn text">4 шт</button>
-                          <button class="option_selector transparent_btn text">5 шт</button>
-                          <button class="option_selector transparent_btn text">6 шт</button>
-                          <button class="option_selector transparent_btn text">7 шт</button>
-                          <button class="option_selector transparent_btn text">8 шт</button>
-                          <button class="option_selector transparent_btn text">9 шт</button>
-                          <button class="option_selector transparent_btn text">11 шт</button>
-                          <button class="option_selector transparent_btn text">12 шт</button>
-                          <button class="option_selector transparent_btn text">13 шт</button>
-                          <button class="option_selector transparent_btn text">14 шт</button>
-                          <button class="option_selector transparent_btn text">15 шт</button>
-                          <button class="option_selector transparent_btn text">16 шт</button>
-                          <button class="option_selector transparent_btn text">17 шт</button>
-                          <button class="option_selector transparent_btn text">18 шт</button>
-                          <button class="option_selector transparent_btn text">19 шт</button>
-                          <button class="option_selector transparent_btn text">20 шт</button>
-                          <button class="option_selector transparent_btn text">21 шт</button>
-                          <button class="option_selector transparent_btn text">22 шт</button>
-                          <button class="option_selector transparent_btn text">23 шт</button>
-                          <button class="option_selector transparent_btn text">24 шт</button>
-                          <button class="option_selector transparent_btn text">25 шт</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="transparent_btn close close_fav">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"></path>
-                    </svg>
-                  </button>
-                </div>
               </div>
-              <a href="" class="blue_btn main_text open_request_invoice">Перейти в ИЗБРАННОЕ</a>
+              <a href="" class="blue_btn main_text open_request_invoice">Перейти в к оформлению заказа</a>
             </div>
           </div>
         </div>

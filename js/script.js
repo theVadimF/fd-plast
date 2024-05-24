@@ -776,3 +776,66 @@ $('.product_card_top .gallery .gallery_img').click(function() {
   big_gallery.slideTo(gallery_slider.activeIndex, 0);
   $('.gallery_popup').addClass('__shown');
 })
+
+// New stuff
+
+$('.spinbox .increment').click(function() {
+  const $value = $(this).siblings('.value_input');
+  const current = parseInt($value.val());
+  if ($(this).hasClass('__up')) {
+    $value.val(current + 1); 
+      $(this).parents('.spinbox').removeClass('__min'); 
+  } else {
+    if (current > 1) {
+      $value.val(current - 1); 
+    } else {
+      $value.val(0);
+      $(this).parents('.spinbox').addClass('__min'); 
+    }
+  }
+})
+
+$('.categories .category_btn').click(function() {
+  console.log(this);
+  $('.categories .category_btn').removeClass('__active');   
+  $(this).addClass('__active');
+})
+
+$('.select_wrap .current').click(function() {
+  const $wrapper = $(this).parents('.select_wrap');
+  if (!$wrapper.hasClass('__open')) {
+    $('.select_wrap').removeClass('__open');
+  }
+  $wrapper.toggleClass('__open');
+})
+
+$('.select_wrap .options label').click(function() {
+  $(this).parents('.select_wrap').removeClass('__open');
+})
+
+$('.select_wrap .options .option_input').change(function() {
+  const val = $(this).val();
+  $(this).parents('.select_wrap').find('.value').text(val);
+})
+
+$('.catalog_item .submit').click(function() {
+  $(this).text("Перейти к оформлению");
+  $(this).addClass('__clicked');
+  $('.catalog_wrap .catalog_bottom .submit').removeClass('__hidden');
+})
+
+$('.spinbox .value_input').change(function() {
+  const val = $(this).val();
+  if (val === "") {
+    $(this).val("0");
+    $(this).parents('.spinbox').addClass('__min');
+    return;
+  }
+
+  if (val === "0") {
+    $(this).parents('.spinbox').addClass('__min');
+    return
+  }
+
+  $(this).parents('.spinbox').removeClass('__min'); 
+})

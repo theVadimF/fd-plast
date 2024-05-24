@@ -8,49 +8,6 @@
   <link rel="stylesheet" href="./js/lib/swiper/swiper-bundle.min.css">
 </head>
 <body>
-  <div class="popup __invoice_form" style="display: none;">
-    <div class="job_form request_box">
-      <div class="request_form content-wrap">
-        <h3>Отправить заказ на расчет</h3>
-        <div class="right">
-          <div class="form_grid">
-            <input type="text" class="input main_text" placeholder="Ваше имя">
-            <input type="text" class="input main_text" placeholder="Телефон">
-            <input type="text" class="input main_text" placeholder="E-mail">
-            <input type="text" class="input main_text" placeholder="Комментарий">
-          </div>
-          <label for="requisites" class="file_lable main_text requisites_label">Реквизиты (загрузите реквизиты в формате DOC, PDF, Excel)</label>
-          <input type="file" data-doc="Реквизиты" id="requisites" class="file requisites_file">
-          <label for="requisites" class="file_lable main_text requisites_label">Заявка (загрузите реквизиты в формате DOC, PDF, Excel)</label>
-          <input type="file" data-doc="Заявка" id="requisites" class="file requisites_file">
-          <div class="checkbox_wrap">
-            <input type="checkbox" name="legal1" id="legal1" class="input">
-            <label for="legal1" class="box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <g clip-path="url(#clip0_708_8249)">
-                <path class="check" d="M4 10.5L9.5 15L16.5 6" stroke="white"></path>
-                <rect x="0.5" y="0.5" width="19" height="19" stroke="white"></rect>
-                </g>
-                <defs>
-                <clipPath id="clip0_708_8249">
-                <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)"></rect>
-                </clipPath>
-                </defs>
-              </svg>
-            </label>
-            <label for="legal1" class="text">Нажимая на кнопку, вы даете согласие на обработку персональных данных</label>
-          </div>
-          <button class="submit main_text">Отправить</button>
-        </div>
-        <button class="form_back transparent_btn" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ce8b8ed7e8f6e296" aria-disabled="false">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <header>
     <div class="top">
       <div class="header-wrap display">
@@ -153,47 +110,107 @@
     </div>
   </header>
 
-  <div class="outer-wrap">
+  <div class="outer-wrap catalog_main">
     <div class="catalog_top content-wrap">
       <div class="top">
-        <h3>Избранное</h3>
-        <p class="catalog_counter">2</p>
+        <h3>Водоотведение</h3>
       </div>
       <div class="crumbs">
-        <a href="" class="text">Вернуться в каталог</a>
+        <a href="" class="text">Главная</a>
+        <p class="text">—</p>
+        <a href="" class="text">Каталог</a>
+        <p class="text">—</p>
+        <p class="text">Водоотведение</p>
       </div>
     </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="content-wrap fav_items">
-      <div class="top">
-        <div class="topper">
-          <h3 class="title">Номенклатура для расчета цены</h3>
-          <div class="hint_wrap">
-            <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"></circle>
-              <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
-              <circle cx="13" cy="6" r="1" fill="#003466"></circle>
-            </svg>
-            <div class="hint_box">
-              <span class="text">
-                Длина трубопровода изменяется в соответствии с номинальной длиной трубы.
-              </span>
-            </div>
-          </div>
+    <div class="catalog_wrap content-wrap">
+      <div class="catalog_topper">
+        <h3 class="bold">Водоотведение</h3>
+        <div class="categories">
+          <button class="category_btn __red">Распродажа</button>
+          <button class="category_btn __red">Акция</button>
+          <button class="category_btn">Новинки</button>
+          <button class="category_btn __blue __active">Все товары</button>
         </div>
-        <button class="transparent_btn close">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </button>
       </div>
-      <div class="items">
-        <div class="item">
-          <img src="./img/2layer.png" alt="" class="img">
-          <div class="item_topper">
-            <p class="main_text name bold">Труба гофрированная с раструбом ПЭ черный</p>
+      <div class="catalog_grid">
+        <div class="catalog_item">
+          <div class="tags">
+            <p class="tag __red">Распродажа</p>
+          </div>
+          <a href="" class="item_top">
+            <img src="./img/2layer.png" alt="" class="item_img">
+            <p class="main_text product_name">Труба гофрированная с раструбом ПЭ SN6-SN7, SN8-SN9</p>
+            <div class="counter">
+              <div class="dot"></div>
+              <span class="text">Много</span>
+            </div>
+          </a>
+          <div class="item_bottom">
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Кольцевая жесткость:</p>
+                  <p class="text value">SN6-7</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked>
+                  <label for="item1_1">SN6-7</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
+                  <label for="item1_2">SN8</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
+                  <label for="item1_3">SN9</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
+                  <label for="item1_4">SN10</label>
+                </div>
+              </div>
+            </div>
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
+                  <p class="text value">230 / 200</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked>
+                  <label for="item11_1">230 / 200</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
+                  <label for="item11_2">
+                    <span>250 / 216</span>
+                    <div class="tag __red">Распродажа</div>
+                  </label>
+                  <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
+                  <label for="item11_3"> 290 / 250</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
+                  <label for="item11_4">315 / 271</label>
+                </div>
+              </div>
+            </div>
+            <div class="price_box">
+              <span class="main_text bold">Цена по запросу</span>
+              <div class="hint_wrap">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"></circle>
+                  <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  <circle cx="13" cy="6" r="1" fill="#003466"></circle>
+                </svg>
+                <div class="hint_box">
+                  <span class="text">
+                    Длина трубопровода изменяется в соответствии с номинальной длиной трубы.
+                  </span>
+                </div>
+              </div>
+            </div>
             <div class="spinbox_wrap">
               <p class="main_text bold">Длина, метр</p>
               <div class="spinbox">
@@ -211,350 +228,309 @@
                 </button>
               </div>
             </div>
-          </div>
-          <!-- <div class="options"> -->
-            <!-- <div class="option"> -->
-            <!--   <button class="option_btn"> -->
-            <!--     <div class="left"> -->
-            <!--       <p class="topper">Кольцевая жесткость:</p> -->
-            <!--       <p class="text value">SN8-9</p> -->
-            <!--     </div> -->
-            <!--     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> -->
-            <!--       <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> -->
-            <!--     </svg> -->
-            <!--   </button> -->
-            <!--   <div class="contents_wrap"> -->
-            <!--     <div class="contents" style="display: none;"> -->
-            <!--       <button class="option_selector transparent_btn text">SN6-7</button> -->
-            <!--       <button class="option_selector transparent_btn text">SN8-9</button> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-            <!-- <div class="option"> -->
-            <!--   <button class="option_btn"> -->
-            <!--     <div class="left"> -->
-            <!--       <p class="topper">Диаметр:</p> -->
-            <!--       <p class="text value">Диаметр 190 мм</p> -->
-            <!--     </div> -->
-            <!--     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"> -->
-            <!--       <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> -->
-            <!--     </svg> -->
-            <!--   </button> -->
-            <!--   <div class="contents_wrap"> -->
-            <!--     <div class="contents" style="display: none;"> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 110 мм</button> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 133 мм</button> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 160 мм</button> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 190 мм</button> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 200 мм</button> -->
-            <!--       <button class="option_selector transparent_btn text">Диаметр 230 мм</button> -->
-            <!--     </div> -->
-            <!--   </div> -->
-            <!-- </div> -->
-          <!-- </div> -->
-          <div class="options">
-          <div class="select_wrap">
-            <button class="current">
-              <div class="left">
-                <p class="topper">Кольцевая жесткость:</p>
-                <p class="text value">SN6-7</p>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <div class="options_wrap">
-              <div class="options"> 
-                <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked="">
-                <label for="item1_1">SN6-7</label>
-                <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
-                <label for="item1_2">SN8</label>
-                <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
-                <label for="item1_3">SN9</label>
-                <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
-                <label for="item1_4">SN10</label>
-              </div>
-            </div>
-          </div>
-          <div class="select_wrap">
-            <button class="current">
-              <div class="left">
-                <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
-                <p class="text value">230 / 200</p>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </button>
-            <div class="options_wrap">
-              <div class="options"> 
-                <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked="">
-                <label for="item11_1">230 / 200</label>
-                <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
-                <label for="item11_2">
-                  <span>250 / 216</span>
-                  <div class="tag __red">Распродажа</div>
-                </label>
-                <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
-                <label for="item11_3"> 290 / 250</label>
-                <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
-                <label for="item11_4">315 / 271</label>
-              </div>
-            </div>
+            <button class="submit">Рассчитать стоимость</button>
           </div>
         </div>
-          <button class="transparent_btn close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M17 3L10.0229 10M10.0229 10L3 17M10.0229 10L3 3M10.0229 10L17 17" stroke="#003466" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <button class="blue_btn main_text open_request_invoice">Отправить заказ на расчет</button>
-    </div>
-  </div>
-
-
-  <div class="outer-wrap">
-    <div class="content-wrap">
-      <p class="section_heading">Обычно для выполнения СМР к этим трубами берут</p>
-    </div>
-  </div>
-
-  <div class="catalog_wrap __fav_items content-wrap">
-    <div class="catalog_section">
-      <div class="catalog_blocks">
-        <div href="" class="catalog_block">
-          <a href="" class="title h3">Отвод 90° черный</a>
-          <img src="./img/90deg.png" alt="" class="img">
-          <div class="bottom">
-            <div class="left col">
-              <p class="main_text">Диаметр, мм: OD_110-400, ID_110-400</p>
-              <p class="main_text">Кольцевая жесткость: SN8</p>
-            </div>
-            <div class="right col">
-              <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-            </div>
+        <div class="catalog_item">
+          <div class="tags">
+            <p class="tag">Новинка</p>
+            <p class="tag __blue">Хит продаж</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="content-wrap">
-      <p class="section_heading">Ранее вы смотрели</p>
-    </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="content-wrap recents">
-      <div class="swiper recent_slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
+          <a href="" class="item_top">
+            <img src="./img/2layer.png" alt="" class="item_img">
+            <p class="main_text product_name">Труба гофрированная с раструбом ПЭ SN6-SN7, SN8-SN9</p>
+            <div class="counter">
+              <div class="dot"></div>
+              <span class="text">Много</span>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="recent_block">
-              <img src="./img/2layer.png" alt="" class="img">
-              <div class="right">
-                <a href="" class="link main_text">Труба гофрированная с раструбом ПЭ черный</a>
-                <button class="blue_btn add_to_order main_text">Добавить к заказу</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="transparent_btn nav prev">
-        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="42" height="42" rx="21" fill="#003466"/>
-          <g clip-path="url(#clip0_708_2161)">
-          <path d="M21.0609 16.1622L16.9074 20.3157H26.9805V21.6754H16.9074L20.7458 25.5138L19.7972 26.4624L14.3303 20.9955L20.1123 15.2135L21.0609 16.1622Z" fill="white"/>
-          <path d="M21.0609 16.1622L16.9074 20.3157H26.9805V21.6754H16.9074L20.7458 25.5138L19.7972 26.4624L14.3303 20.9955L20.1123 15.2135L21.0609 16.1622Z" fill="white"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_708_2161">
-          <rect width="13.33" height="13.33" fill="white" transform="matrix(-1 0 0 -1 27.6602 27.6602)"/>
-          </clipPath>
-          </defs>
-        </svg>
-      </button>
-      <button class="transparent_btn nav next">
-        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="42" height="42" rx="21" fill="#003466"/>
-          <g clip-path="url(#clip0_708_2160)">
-          <path d="M20.9274 25.828L25.0809 21.6746H15.0078V20.3149H25.0809L21.2425 16.4765L22.191 15.5278L27.658 20.9947L21.876 26.7767L20.9274 25.828Z" fill="white"/>
-          <path d="M20.9274 25.828L25.0809 21.6746H15.0078V20.3149H25.0809L21.2425 16.4765L22.191 15.5278L27.658 20.9947L21.876 26.7767L20.9274 25.828Z" fill="white"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_708_2160">
-          <rect width="13.33" height="13.33" fill="white" transform="translate(14.3281 14.3301)"/>
-          </clipPath>
-          </defs>
-        </svg>
-      </button>
-    </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="content-wrap">
-      <p class="section_heading">Не забудет скачать сертификаты на продукцию и полный каталог</p>
-    </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="docs_block __fav_items">
-      <div class="swiper docs_slider_main">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="block">
-              <img src="./img/gost.png" alt="" class="img __gost">
-              <h5 class="title">Техническая документация</h5>
-              <p class="text">Сертификаты, ГОСТы и СНИПы на полиэтиленовые трубы и другую производимую продукцию Московского завода FDplast</p>
-              <button class="choose main_text" data-type="tech_docs">
-                <span>Выбрать документацию</span>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="42" height="42" rx="21" fill="#003466"/>
-                  <g clip-path="url(#clip0_708_7349)">
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_708_7349">
-                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                  </clipPath>
-                  </defs>
+          </a>
+          <div class="item_bottom">
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Кольцевая жесткость:</p>
+                  <p class="text value">SN6-7</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked>
+                  <label for="item1_1">SN6-7</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
+                  <label for="item1_2">SN8</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
+                  <label for="item1_3">SN9</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
+                  <label for="item1_4">SN10</label>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="block">
-              <img src="./img/catalog.png" alt="" class="img __catalog">
-              <h5 class="title">Каталоги</h5>
-              <p class="text">Московский завод FDplast предлагает своим партнерам, дилерам рекламную продукцию: технические и справочные каталоги, листовки, брошюры, демобоксы.</p>
-              <button class="choose main_text" data-type="catalog">
-                <span>Выбрать документацию</span>
-                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="42" height="42" rx="21" fill="#003466"/>
-                  <g clip-path="url(#clip0_708_7349)">
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                  <path d="M20.9294 25.8285L25.0829 21.6751H15.0098V20.3154H25.0829L21.2444 16.4769L22.193 15.5283L27.6599 20.9952L21.878 26.7772L20.9294 25.8285Z" fill="white"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_708_7349">
-                  <rect width="13.33" height="13.33" fill="white" transform="translate(14.3301 14.3301)"/>
-                  </clipPath>
-                  </defs>
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
+                  <p class="text value">230 / 200</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked>
+                  <label for="item11_1">230 / 200</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
+                  <label for="item11_2">
+                    <span>250 / 216</span>
+                    <div class="tag __red">Распродажа</div>
+                  </label>
+                  <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
+                  <label for="item11_3"> 290 / 250</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
+                  <label for="item11_4">315 / 271</label>
+                </div>
+              </div>
             </div>
+            <div class="price_box">
+              <span class="main_text bold">Цена по запросу</span>
+              <div class="hint_wrap">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"></circle>
+                  <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  <circle cx="13" cy="6" r="1" fill="#003466"></circle>
+                </svg>
+                <div class="hint_box">
+                  <span class="text">
+                    Длина трубопровода изменяется в соответствии с номинальной длиной трубы.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="spinbox_wrap">
+              <p class="main_text bold">Длина, метр</p>
+              <div class="spinbox">
+                <button class="increment __down">
+                  <svg class="icon" width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+                <input type="text" class="value_input" value="1" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')">
+                <button class="increment __up">
+                  <svg class="icon" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 16.5L8.5 1.5" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M1 9H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="submit">Рассчитать стоимость</button>
           </div>
-        </div>
-        <div class="nav_line">
-          <p class="counter">0 / 0</p>
-          <div class="btns">
-            <button class="transparent_btn nav prev">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_650_1243)">
-                <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
-                <path d="M7.9808 13.0046L3.0558 8.37414H15V6.85829H3.05581L7.60724 2.57905L6.4824 1.52148L0 7.61622L6.85597 14.0622L7.9808 13.0046Z" fill="#003466"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_650_1243">
-                <rect width="15" height="15" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>
-            </button>
-            <button class="transparent_btn nav next">
-              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
-                <path d="M7.42622 12.9383L12.1001 8.26447H0.765015V6.73443H12.1001L7.78074 2.41512L8.84816 1.34766L15 7.49945L8.49366 14.0058L7.42622 12.9383Z" fill="#003466"/>
-              </svg>
-            </button>
+        </div><div class="catalog_item">
+          <div class="tags">
+            <p class="tag __red">Распродажа</p>
+          </div>
+          <a href="" class="item_top">
+            <img src="./img/2layer.png" alt="" class="item_img">
+            <p class="main_text product_name">Труба гофрированная с раструбом ПЭ SN6-SN7, SN8-SN9</p>
+            <div class="counter">
+              <div class="dot"></div>
+              <span class="text">Много</span>
+            </div>
+          </a>
+          <div class="item_bottom">
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Кольцевая жесткость:</p>
+                  <p class="text value">SN6-7</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked>
+                  <label for="item1_1">SN6-7</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
+                  <label for="item1_2">SN8</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
+                  <label for="item1_3">SN9</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
+                  <label for="item1_4">SN10</label>
+                </div>
+              </div>
+            </div>
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
+                  <p class="text value">230 / 200</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked>
+                  <label for="item11_1">230 / 200</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
+                  <label for="item11_2">
+                    <span>250 / 216</span>
+                    <div class="tag __red">Распродажа</div>
+                  </label>
+                  <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
+                  <label for="item11_3"> 290 / 250</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
+                  <label for="item11_4">315 / 271</label>
+                </div>
+              </div>
+            </div>
+            <div class="price_box">
+              <span class="main_text bold">Цена по запросу</span>
+              <div class="hint_wrap">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"></circle>
+                  <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  <circle cx="13" cy="6" r="1" fill="#003466"></circle>
+                </svg>
+                <div class="hint_box">
+                  <span class="text">
+                    Длина трубопровода изменяется в соответствии с номинальной длиной трубы.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="spinbox_wrap">
+              <p class="main_text bold">Длина, метр</p>
+              <div class="spinbox">
+                <button class="increment __down">
+                  <svg class="icon" width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+                <input type="text" class="value_input" value="1" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')">
+                <button class="increment __up">
+                  <svg class="icon" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 16.5L8.5 1.5" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M1 9H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="submit">Рассчитать стоимость</button>
+          </div>
+        </div><div class="catalog_item">
+          <div class="tags">
+            <p class="tag __red">Распродажа</p>
+          </div>
+          <a href="" class="item_top">
+            <img src="./img/2layer.png" alt="" class="item_img">
+            <p class="main_text product_name">Труба гофрированная с раструбом ПЭ SN6-SN7, SN8-SN9</p>
+            <div class="counter">
+              <div class="dot"></div>
+              <span class="text">Много</span>
+            </div>
+          </a>
+          <div class="item_bottom">
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Кольцевая жесткость:</p>
+                  <p class="text value">SN6-7</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item1" id="item1_1" value="SN6-7" checked>
+                  <label for="item1_1">SN6-7</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_2" value="SN8">
+                  <label for="item1_2">SN8</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_3" value="SN9">
+                  <label for="item1_3">SN9</label>
+                  <input class="option_input" type="radio" name="item1" id="item1_4" value="SN10">
+                  <label for="item1_4">SN10</label>
+                </div>
+              </div>
+            </div>
+            <div class="select_wrap">
+              <button class="current">
+                <div class="left">
+                  <p class="topper">Наружный внутренний диаметр OD/ID, мм:</p>
+                  <p class="text value">230 / 200</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M4 6L8 10L12 6" stroke="#003466" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="options_wrap">
+                <div class="options"> 
+                  <input class="option_input" type="radio" name="item11" id="item11_1" value="320 / 200" checked>
+                  <label for="item11_1">230 / 200</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_2" value="250 / 216">
+                  <label for="item11_2">
+                    <span>250 / 216</span>
+                    <div class="tag __red">Распродажа</div>
+                  </label>
+                  <input class="option_input" type="radio" name="item11" id="item11_3" value="290 / 250">
+                  <label for="item11_3"> 290 / 250</label>
+                  <input class="option_input" type="radio" name="item11" id="item11_4" value="315 / 271">
+                  <label for="item11_4">315 / 271</label>
+                </div>
+              </div>
+            </div>
+            <div class="price_box">
+              <span class="main_text bold">Цена по запросу</span>
+              <div class="hint_wrap">
+                <svg class="icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="12" stroke="#003466" stroke-width="2"></circle>
+                  <path d="M13 20V9" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  <circle cx="13" cy="6" r="1" fill="#003466"></circle>
+                </svg>
+                <div class="hint_box">
+                  <span class="text">
+                    Длина трубопровода изменяется в соответствии с номинальной длиной трубы.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="spinbox_wrap">
+              <p class="main_text bold">Длина, метр</p>
+              <div class="spinbox">
+                <button class="increment __down">
+                  <svg class="icon" width="17" height="2" viewBox="0 0 17 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+                <input type="text" class="value_input" value="1" inputmode="numeric" oninput="this.value = this.value.replace(/\D+/g, '')">
+                <button class="increment __up">
+                  <svg class="icon" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 16.5L8.5 1.5" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M1 9H16" stroke="#003466" stroke-width="2" stroke-linecap="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="submit">Рассчитать стоимость</button>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="outer-wrap">
-    <div class="content-wrap">
-      <div class="section_heading_line">
-        <p class="section_heading">Остались вопросы? Задавайте в наших соцсетях</p>
-        <div class="socials">
-          <a href="" class="social_link">
-            <img src="./img/ico/icons-VK-dark.svg" alt="">
-          </a>
-          <a href="" class="social_link">
-            <img src="./img/ico/icons-telegram-dark.png" alt="">
-          </a>
-        </div>
-        <p class="section_heading">по тел. <a href="tel:7(495)640-88-38">+7 (495) 640-88-38</a></p>
+      <div class="catalog_bottom">
+        <a href="" class="blue_btn submit __hidden">Перейти в к оформлению заказа</a>
+        <a href="" class="blue_btn __white">
+          <span>Вернуться в каталог</span> 
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.92453 12.7932L12.9037 7.81402H0.828125V6.18402H12.9037L8.30221 1.58252L9.43937 0.445312L15.9931 6.99902L9.06171 13.9304L7.92453 12.7932Z" fill="#344E9B"/>
+          </svg>
+        </a>
       </div>
-    </div>
-  </div>
-
-  <div class="outer-wrap favorites_bottom">
-    <div class="bottom_btns content-wrap">
-      <a href="" class="blue_btn main_text">Перейти в избранное</a>
-      <a href="" class="blue_btn __white main_text">
-        <span>Перейти в избранное</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_708_3323)">
-          <path d="M7.92062 13.7942L12.8998 8.815H0.824219V7.185H12.8998L8.2983 2.5835L9.43547 1.44629L15.9892 8L9.05781 14.9314L7.92062 13.7942Z" fill="#344E9B"></path>
-          <path d="M7.92062 13.7942L12.8998 8.815H0.824219V7.185H12.8998L8.2983 2.5835L9.43547 1.44629L15.9892 8L9.05781 14.9314L7.92062 13.7942Z" fill="#344E9B"></path>
-          </g>
-          <defs>
-          <clipPath id="clip0_708_3323">
-          <rect width="15.98" height="15.98" fill="white" transform="translate(0.00976562 0.00976562)"></rect>
-          </clipPath>
-          </defs>
-        </svg>
-      </a>
     </div>
   </div>
 
